@@ -1,0 +1,16 @@
+/* -----------------------------------------
+   Mixins
+----------------------------------------- */
+
+@mixin transition($duration: 0.3s, $property: all, $effect: ease-in-out) {
+  transition: $property $duration $effect;
+}
+
+@mixin animation($effect: fadeIn,  $duration: 0.5s, $delay: 0s, $count: 1, $direction: normal) {
+  animation-name: $effect;
+  animation-duration: $duration;
+  animation-delay: ($delay);
+  animation-iteration-count: $count;
+  animation-fill-mode: both;
+  animation-direction: $direction;
+}
