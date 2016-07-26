@@ -10,11 +10,12 @@
         </button>
       </div>
       <div class="collapse navbar-collapse" id="mainnav-collapse">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Context</a></li>
-          <li><a href="#">Pilot</a></li>
-          <li><a href="#">Q &amp; A</a></li>
-          <li><a href="#">Blueprint</a></li>
+        <ul class="flexnav">
+          {% assign current = page.url | downcase | remove: '.html' %}
+          <li {% if current =='/' %}class="active"{% endif %}><a href="{{ site.baseurl }}/">Context</a></li>
+          <li {% if current =='/pilot' %}class="active"{% endif %}><a href="{{ site.baseurl }}/pilot">Pilot</a></li>
+          <li {% if current =='/qa' %}class="active"{% endif %}><a href="{{ site.baseurl }}/qa">Q &amp; A</a></li>
+          <li {% if current =='/blueprint' %}class="active"{% endif %}><a href="{{ site.baseurl }}/blueprint">Blueprint</a></li>
         </ul>
       </div>
     </div>
