@@ -15,19 +15,15 @@ layout: default
     </div>
   </div> 
 </section>
-<div class="two-column-wrapper">
+<div class="pilot-layout">
   <nav class="left-column">
-    <ul class="sidenav">
-      <li class="active"><a href="#">Research</a></li>
-      <li><a href="#">Curation</a></li>
-      <li><a href="#">Targeting</a></li>
-      <li><a href="#">Measurement</a></li>
-    </ul>
+    {% include sidenav.html %}
   </nav>
   <div class="right-column">
     <header class="section-header gray-light">
       <div class="container">
         <h1><span class="circle-number">1</span>Research</h1>
+        <button class="subnav-trigger">Menu</button>
       </div>
     </header>
     <section>
@@ -102,7 +98,7 @@ layout: default
     </section>
     <footer class="section-footer">
       <div class="container">
-        <a href="#" class="next">Next: Curation</a>
+        <a href="{{ site.baseurl }}/curation" class="next">Next: Curation</a>
       </div>
     </footer>
   </div>

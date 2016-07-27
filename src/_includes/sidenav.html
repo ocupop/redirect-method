@@ -1,0 +1,7 @@
+<ul class="sidenav">
+  {% assign current = page.url | downcase | remove: '.html' %}
+  <li {% if current =='/pilot' %}class="active"{% endif %}><a href="{{ site.baseurl }}/pilot">Research</a></li>
+  <li {% if current =='/curation' %}class="active"{% endif %}><a href="{{ site.baseurl }}/curation">Curation</a></li>
+  <li {% if current =='/targeting' %}class="active"{% endif %}><a href="{{ site.baseurl }}/targeting">Targeting</a></li>
+  <li {% if current =='/measurement' %}class="active"{% endif %}><a href="{{ site.baseurl }}/measurement">Measurement</a></li>
+</ul>
