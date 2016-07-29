@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<section id="intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="content">
+          <img id="logo" src="img/logo-wordmark.svg" class="img-responsive center-block">
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <h1>The pilot experiment that started it all.</h1>
+        <p>User:Ayda is a pilot experiment we conducted between August 2015 and March 2016 to test a new approach to tackling violent extremism recruitment efforts online. The project relied on two advertising campaigns of 5 YouTube playlist each: the English campaign featured 51 videos, and the Arabic campaign # videos. Over the course of 8 weeks, together these two campaigns reached an estimate of 440,000 unique individuals.</p>
+      </div>
+    </div>
+  </div> 
+</section>
+<div class="pilot-layout">
+  <nav class="left-column">
+    {% include sidenav.html %}
+  </nav>
+  <div class="right-column">
+    <header class="section-header gray-light">
+      <div class="container">
+        <h1><span class="circle-number">{{ page.order }}</span>{{ page.title }}</h1>
+        <button class="subnav-trigger">Menu</button>
+      </div>
+    </header>
+    {{ content }}
+    <footer class="section-footer">
+      <div class="container">
+        <a href="{{ site.baseurl }}{{ page.next-url }}" class="next">Next: {{ page.next-title }}</a>
+      </div>
+    </footer>
+  </div>
+</div>

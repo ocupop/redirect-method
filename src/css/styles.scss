@@ -18,8 +18,20 @@ a {
   }
 }
 
+h2 {
+  font-weight: 600;
+}
+
 section {
   padding: 50px 0;
+  &.gray-light {
+    box-shadow: 1px 3px 15px rgba(0,0,0,.5); 
+  }
+}
+
+p  {
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
 /* -----------------------------------------
@@ -29,16 +41,41 @@ DOM
 // Structure
 #page-header {
   background-color: $gray-dark;
+  background-image: url(../img/header-noise.png);
+  background-position-y: -50px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #page-content {}
 
 #page-footer {
-  padding: 30px 0;
+  padding-top: 30px;
   background-color: $gray-darker;
   color: #fff;
   .container {
     position: relative;
+  }
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    li {
+      &:first-child {
+        a {
+          color: #fff;
+          border-bottom: 2px solid #fff;
+          line-height: 2;
+        }
+      }
+      a {
+        color: $gray;
+      }
+    }
+  }
+  #footer-bar {
+    margin-top: 30px;
+    padding: 20px 0;
+    font-weight: 300;
   }
 }
 
@@ -87,23 +124,12 @@ DOM
   }
 }
 
-#footernav {
-  list-style-type: none;
-  padding-left: 0;
-  li {
-    a {
-      color: #fff;
-    }
-  }
-}
-
 #top {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  position: relative;
   color: #fff;
   padding-right: 20px;
   display: block;
+  float: right;
   &:after {
     content: '';
     position: absolute;
@@ -117,6 +143,25 @@ DOM
     border-bottom: 12px solid $brand-primary;
   }
 }
+
+#intro {
+  background: url(../img/bg-intro.png) no-repeat center center;
+  background-size: cover;
+  min-height: 450px;
+}
+
+#logo {
+  max-width: 275px;
+  margin-top: 20px;
+}
+
+
+/* -----------------------------------------
+bootstrap overwrites
+----------------------------------------- */
+ .btn {
+  font-size: 18px;
+ }
 
 /* -----------------------------------------
 Utility Classes
@@ -198,9 +243,6 @@ Utility Classes
   h1, h2, h3, h4, h5, h6 {
     color: #fff;
   }
-  h1 {
-    font-size: 39px;
-  }
 }
 
 .pilot-layout {
@@ -221,8 +263,18 @@ Utility Classes
   float: left;
   background-color: #fff;
   img {
-    padding-top: 25px;
     padding-bottom: 25px;
+  }
+  iframe {
+    margin-top:20px;
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+  strong {
+    letter-spacing: 1px;
+  }
+  li {
+    margin: 7px 0;
   }
 }
 
@@ -278,6 +330,13 @@ Utility Classes
   }
 }
 
+.bg-constellation {
+  background-image: url(../img/bg-constellation.png);
+  background-position-y: -15px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 
 
 /* -----------------------------------------
@@ -285,9 +344,25 @@ Page specific
 ----------------------------------------- */
 
 //Index (context page)
-#team {
+#rami-description {
   img {
+    max-width: 160px;
+  }
+}
+#experiment-naming {
+  img {
+    max-width: 275px;
+  }
+}
+
+//Blueprint page
+#blueprint {
+  .btn {
+    padding-top: 20px;
     padding-bottom: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom:20px;
   }
 }
 
