@@ -85,6 +85,7 @@ DOM
     width: 100%;
     padding-left: 0;
     list-style-type: none;
+    transition: all 2s ease;
     li {
       height: 60px;
       line-height: 60px;
@@ -161,6 +162,10 @@ bootstrap overwrites
 ----------------------------------------- */
  .btn {
   font-size: 18px;
+ }
+
+ .navbar-collapse {
+  transition: all .5s ease;
  }
 
 /* -----------------------------------------
@@ -430,3 +435,19 @@ Media Queries
     display: block;
   }
 } 
+
+@media(max-width: 768px) {
+  #mainnav {
+    padding-top: 0;
+    .flexnav {
+      display: block;
+      li {
+        &.active {
+          &:after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
