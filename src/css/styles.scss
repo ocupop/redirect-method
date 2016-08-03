@@ -81,8 +81,12 @@ DOM
   }
   #footer-bar {
     margin-top: 30px;
-    padding: 20px 0;
     font-weight: 300;
+    .col-sm-4 {
+      &:nth-of-type(2) {
+        text-align: center;
+      }
+    }
   }
 }
 
@@ -169,10 +173,16 @@ bootstrap overwrites
 ----------------------------------------- */
  .btn {
   font-size: 18px;
+  margin-bottom: 20px;
  }
 
  .navbar-collapse {
   transition: all .5s ease;
+ }
+
+ .tooltip {
+  padding: 25px;
+  text-align: left;
  }
 
 /* -----------------------------------------
@@ -251,6 +261,10 @@ Utility Classes
 
 .gray-light {
   background-color: $gray-light;
+}
+
+.gray-lighter {
+  background-color: $gray-lighter;
 }
 
 .gray-dark {
@@ -338,21 +352,27 @@ Utility Classes
 .subnav-trigger {
   display: none;
   position: absolute;
-  bottom: 10px;
-  left: 18px;
+  top: 0;
+  left: 0;
   border: none;
-  background-color: transparent;
-  &:after {
+  background-color: $gray-dark;
+  color: $gray-light;
+  width: 90px;
+  height: 100%;
+  padding-top:40px;
+  &:before {
     content: '';
     position: absolute;
-    right: -11px;
-    top: 9px;
+    left: 50%;
+    top: 50%;
+    margin-top: -25px;
+    margin-left: -10px;
     display: block;
     width: 0; 
     height: 0; 
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-left: 10px solid $gray-dark;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 25px solid #fff;
   }
 }
 
@@ -361,6 +381,42 @@ Utility Classes
   background-position-y: -15px;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.download {
+  padding-left: 30px;
+  position: relative;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    background-image: url(../img/download.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+.info {
+  display: inline-block;
+  background-color: $brand-primary;
+  width:15px;
+  height: 15px;
+  margin: 1px 3px 0 2px;
+  border-radius: 50%;
+  position: relative;
+  &:before {
+    content: 'i';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+    color: #fff;
+    font-size: 10px;
+  }
 }
 
 
@@ -489,6 +545,11 @@ Media Queries
 } 
 
 @media(max-width: 768px) {
+  .section-header {
+    h1 {
+      padding: 60px 0 60px 100px;
+    }
+  }
   #mainnav {
     padding-top: 0;
     .flexnav {
