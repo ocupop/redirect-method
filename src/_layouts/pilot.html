@@ -17,22 +17,11 @@ layout: default
     </div>
   </div> 
 </section>
-<div class="pilot-layout">
+<div id="pilot-presentation" class="pilot-layout">
   <nav class="left-column">
     {% include sidenav.html %}
   </nav>
   <div class="right-column">
-    <header class="section-header">
-      <div class="container">
-        <h1><span class="circle-number">{{ page.order }}</span>{{ page.title }}</h1>
-        <button class="subnav-trigger">Menu</button>
-      </div>
-    </header>
     {{ content }}
-    <footer class="section-footer">
-      <div class="container">
-        <a href="{{ site.baseurl }}{{ page.next-url }}" class="next">Next: {{ page.next-title }}</a>
-      </div>
-    </footer>
   </div>
 </div>
