@@ -24,10 +24,6 @@ a {
   }
 }
 
-h2 {
-  font-weight: 600;
-}
-
 section {
   padding: 50px 0;
   &.gray-light, &.gray-dark {
@@ -79,13 +75,14 @@ DOM
       }
     }
   }
-  #footer-bar {
-    margin-top: 30px;
-    font-weight: 300;
-    .col-sm-4 {
-      &:nth-of-type(2) {
-        text-align: center;
-      }
+}
+
+#footer-bar {
+  margin-top: 30px;
+  font-weight: 300;
+  .col-sm-4 {
+    &:nth-of-type(2) {
+      text-align: center;
     }
   }
 }
@@ -202,6 +199,9 @@ Utility Classes
   h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 60px 0;
+  }
+  h1 {
+    font-size: 35px;
   }
   .container {
     position: relative;
@@ -360,6 +360,7 @@ Utility Classes
   width: 90px;
   height: 100%;
   padding-top:40px;
+  z-index: 10;
   &:before {
     content: '';
     position: absolute;
@@ -411,7 +412,7 @@ Utility Classes
   &:before {
     content: 'i';
     position: absolute;
-    top: 0;
+    top: 1px;
     left: 50%;
     margin-left: -1px;
     color: #fff;
@@ -419,8 +420,19 @@ Utility Classes
   }
 }
 
-
-
+.arrow-down {
+  display:inline-block;
+  &:before {
+    content: '';
+    margin: 0 5px;
+    display: block;
+    width: 0; 
+    height: 0; 
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 15px solid #fff;
+  }
+}
 
 /* -----------------------------------------
 Page specific
@@ -438,13 +450,42 @@ Page specific
     max-width: 275px;
   }
 }
+#what-is-rami {
+  h2 {
+    font-weight: 600;
+  }
+}
+
+//Pilot page
+// - research section
+#recruitment {
+  img {
+    margin: 20px 10px;
+    padding-bottom: 0;
+  }
+}
+// - curation section
+#channels {
+  h1 {
+    margin-top: 0;
+  }
+  img {
+    padding-bottom: 0;
+    padding-top: 20px;
+  }
+}
 
 //Blueprint page
 #intro-blueprint {
   background-image: url(../img/mideast_mountains_blueprintpage.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: -50px;
+  .btn {
+    text-transform: uppercase;
+    font-size: 22px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 
 #blueprint {
@@ -502,6 +543,10 @@ Media Queries
       margin-left: 20px;
     }
   }
+
+  #intro, #intro-blueprint {
+    background-position-y: 0;
+  }
 }
 
 
@@ -529,26 +574,31 @@ Media Queries
     transition: all .5s ease;
   }
 
+  .section-header {
+    position:relative;
+    h1 {
+      padding: 60px 0 60px 100px;
+    }
+  }
+
   .subnav-trigger {
     display: block;
   }
-
-  #intro, #intro-blueprint {
-    background-position-y: inherit;
-  }
-
   #blueprint {
     .btn {
       font-size: 15px;
     }
   }
+  #intro-blueprint {
+    .btn {
+      font-size: 16px;
+    }  
+  }
 } 
 
 @media(max-width: 768px) {
-  .section-header {
-    h1 {
-      padding: 60px 0 60px 100px;
-    }
+  h1 {
+    font-size: 25px;
   }
   #mainnav {
     padding-top: 0;
@@ -561,6 +611,28 @@ Media Queries
           }
         }
       }
+    }
+  }
+  #footer-bar {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 300;
+    .col-sm-4 {
+      &:nth-of-type(2) {
+        text-align: left;
+      }
+    }
+    .content {
+      padding: 15px 20px;
+    }
+  }
+  #top {
+    float: left;
+  }
+  #recruitment {
+    img {
+      max-width: 320px;
+      margin: 0 auto;
     }
   }
 }

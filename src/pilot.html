@@ -8,3 +8,38 @@ layout: pilot
   {% include targeting.html %}
   {% include measurement.html %}
 </div>
+
+<script>
+$(document).on('ready', function(){
+  $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+    if($('.left-column').hasClass('open')){
+      $('.left-column').removeClass('open');
+    }
+  })
+  // scroll user back up to top of pilot presentation and show next slide
+  $('.next').on('click', function(){
+    var active_tab = $(this).attr('href');
+    var target_scroll = $('#pilot-presentation').offset();
+    $('html, body').animate({scrollTop: target_scroll.top}, "slow");
+    window.console.log(active_tab);
+    $('.sidenav a[href="'+ active_tab +'"]').tab('show')
+  });
+  // open specific tab on page reload for pilot tabs
+  var params = '#' + window.location.search.substring(1);
+  window.console.log(params);
+  if (params.indexOf('research') > -1 ) {
+    window.console.log('true');
+  }
+  $('a[data-toggle="tab"]').each(function(){
+    var target_scroll = $('#pilot-presentation').offset();
+    $('html, body').animate({scrollTop: target_scroll.top}, "slow");
+    var href = $(this).attr('href');
+    window.console.log(href);
+    if($(this).attr('href') == params){
+
+      window.console.log('match');
+      $(this).tab('show');
+    }
+  });
+});
+</script>
