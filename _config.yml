@@ -1,3 +1,5 @@
+version: 3.0.3
+
 # Site settings
 title: The Rami Method
 baseurl: "/rami" # the subpath of your site, e.g. /clientname
