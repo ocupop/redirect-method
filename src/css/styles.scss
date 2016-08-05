@@ -69,6 +69,7 @@ DOM
           color: $gray-lighter;
           border-bottom: 2px solid #fff;
           line-height: 2;
+          padding-bottom: 2px;
         }
       }
       a {
@@ -167,13 +168,15 @@ DOM
   }
   &.intro-blueprint {
     background-image: url(../img/mideast_mountains_blueprintpage.png);
+    background-position: bottom center;
     img {
       box-shadow: 1px 3px 15px rgba(0,0,0,.5);
     }
-    p {
-      &:last-child {
-        color: $gray-mid;
-        font-size: 17px;
+    .download {
+      color: $gray-mid;
+      font-size: 17px;
+      &:hover {
+        color: #de410e;
       }
     }
     .btn {
@@ -679,10 +682,12 @@ Media Queries
       font-size: 15px;
     }
   }
-  #intro-blueprint {
-    .btn {
-      font-size: 16px;
-    }  
+  #intro {
+    &.intro-blueprint {
+      .btn {
+        font-size: 16px;
+      }
+    }
   }
 } 
 
