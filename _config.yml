@@ -2,8 +2,8 @@ version: 3.0.3
 
 # Site settings
 title: The Rami Method
-baseurl: "/rami" # the subpath of your site, e.g. /clientname
-url: "http://ocupopdev.com" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /clientname
+url: "http://lemon-stork1.cloudvent.net" # the base hostname & protocol for your site
 
 # Build settings
 safe: false
