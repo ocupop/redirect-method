@@ -4,7 +4,7 @@ version: 3.0.3
 title: The Rami Method
 baseurl: "" # the subpath of your site, e.g. /clientname
 url: "http://lemon-stork1.cloudvent.net" # the base hostname & protocol for your site
-permalink: /:year/:month/:title
+permalink: /:basename/:path/
 
 # Build settings
 safe: false
