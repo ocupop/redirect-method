@@ -8,7 +8,5 @@ url: "http://ocupopdev.com" # the base hostname & protocol for your site
 # Build settings
 safe: false
 
-source: src
-
 gems:
   - jekyll-bootstrap-sass
