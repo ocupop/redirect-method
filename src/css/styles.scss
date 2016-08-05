@@ -26,8 +26,9 @@ a {
 
 section {
   padding: 50px 0;
-  &.gray-light, &.gray-dark {
+  &.gray-light, &.gray-dark, &.gray-lighter {
     box-shadow: 1px 3px 15px rgba(0,0,0,.5); 
+    position: relative;
   }
 }
 
@@ -65,13 +66,13 @@ DOM
     li {
       &:first-child {
         a {
-          color: #fff;
+          color: $gray-lighter;
           border-bottom: 2px solid #fff;
           line-height: 2;
         }
       }
       a {
-        color: $gray;
+        color: $gray-mid;
       }
     }
   }
@@ -154,9 +155,34 @@ DOM
 }
 
 #intro {
-  background: url(../img/bg-intro.png) no-repeat center center;
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
   min-height: 450px;
+  &.intro-home {
+    background-image: url(../img/bg-intro.png);
+  }
+  &.intro-pilot {
+    background-image: url(../img/mideast_mountains_pilotpage.png);
+  }
+  &.intro-blueprint {
+    background-image: url(../img/mideast_mountains_blueprintpage.png);
+    img {
+      box-shadow: 1px 3px 15px rgba(0,0,0,.5);
+    }
+    p {
+      &:last-child {
+        color: $gray-mid;
+        font-size: 17px;
+      }
+    }
+    .btn {
+      text-transform: uppercase;
+      font-size: 22px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
 }
 
 #logo {
@@ -171,16 +197,25 @@ bootstrap overwrites
  .btn {
   font-size: 18px;
   margin-bottom: 20px;
+  &.gray-dark {
+    &:hover {
+      background-color: $gray-darker;
+    }
+  }
  }
 
  .navbar-collapse {
   transition: all .5s ease;
  }
-
- .tooltip {
+ 
+.tooltip-inner {
+  max-width: 300px;
+  width:300px;
   padding: 25px;
   text-align: left;
- }
+  background-color: $gray-dark;
+}
+ 
 
 /* -----------------------------------------
 Utility Classes
@@ -263,6 +298,10 @@ Utility Classes
   background-color: $gray-light;
 }
 
+.gray {
+  background-color: $gray;
+}
+
 .gray-lighter {
   background-color: $gray-lighter;
 }
@@ -315,6 +354,9 @@ Utility Classes
   }
   li {
     margin: 7px 0;
+  }
+  em {
+    font-size: 22px;
   }
 }
 
@@ -446,11 +488,16 @@ Page specific
   }
 }
 #experiment-naming {
+  z-index: 5;
   img {
     max-width: 275px;
   }
 }
 #what-is-rami {
+  img {
+    max-width: 300px;
+    margin: 20px auto;
+  }
   h2 {
     font-weight: 600;
   }
@@ -460,12 +507,16 @@ Page specific
 // - research section
 #recruitment {
   img {
-    margin: 20px 10px;
+    margin: 20px 0;
     padding-bottom: 0;
   }
 }
 // - curation section
 #channels {
+  background-image: url(../img/halftone_background_doublecolumn.png);
+  background-size: contain;
+  background-color: $gray-lighter;
+  box-shadow: none;
   h1 {
     margin-top: 0;
   }
@@ -474,19 +525,46 @@ Page specific
     padding-top: 20px;
   }
 }
-
-//Blueprint page
-#intro-blueprint {
-  background-image: url(../img/mideast_mountains_blueprintpage.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  .btn {
-    text-transform: uppercase;
-    font-size: 22px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+// - targeting section
+#targeting {
+  h2 {
+    font-size: 26px;
+  }
+  #infographic {
+    padding-top:30px;
   }
 }
+
+// - measurement section
+#campaign-engagement {
+  padding-top: 30px;
+}
+
+#blueprint-cta {
+  img {
+    box-shadow: 1px 3px 15px rgba(0,0,0,.5);
+    padding-bottom: 0;
+    max-width:225px;
+  }
+  p {
+    font-size: 28px;
+    margin-top:20px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  .btn {
+    @extend .next;
+    font-size: 27px;
+    padding-top: 20px;
+    padding-bottom: 20px; 
+    &:after {
+      top: 15px;
+      right: 25px;
+    }
+  }
+}
+
+//Blueprint page
 
 #blueprint {
   .btn {
@@ -544,8 +622,20 @@ Media Queries
     }
   }
 
-  #intro, #intro-blueprint {
-    background-position-y: 0;
+  #intro {
+    background-position-y: -50px;
+  }
+}
+
+@media(min-width: 1400px) {
+  #intro {
+    background-position-y: -100px;
+  }
+}
+
+@media(min-width: 1600px) {
+  #intro {
+    background-position-y: -150px;
   }
 }
 

@@ -32,14 +32,17 @@ $(document).on('ready', function(){
   }
   $('a[data-toggle="tab"]').each(function(){
     var target_scroll = $('#pilot-presentation').offset();
-    $('html, body').animate({scrollTop: target_scroll.top}, "slow");
     var href = $(this).attr('href');
     window.console.log(href);
     if($(this).attr('href') == params){
-
+      $('html, body').animate({scrollTop: target_scroll.top}, "slow");
       window.console.log('match');
       $(this).tab('show');
     }
   });
+  $('.html5-video-player').on('load', function(){
+    $('.ytp-playlist-menu-button').trigger('click');
+  });
+  
 });
 </script>
