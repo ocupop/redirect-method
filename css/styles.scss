@@ -538,6 +538,29 @@ Page specific
   }
 }
 
+#mosaic-wrapper {
+  position: relative;
+  height: 295px;
+  width: 295px;
+  max-width: 100%;
+  background-image: url(../img/text_ads.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  img {
+    position: absolute;
+    top:0;
+    left:0;
+    max-width: 50%;
+    &.start {
+      opacity: 0;
+    }
+    &.fadeIn {
+      animation-duration: 1s;
+    }
+  }
+}
+
 // - measurement section
 #campaign-engagement {
   padding-top: 30px;

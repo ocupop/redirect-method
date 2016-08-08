@@ -45,6 +45,41 @@ $(document).on('ready', function(){
   $('.html5-video-player').on('load', function(){
     $('.ytp-playlist-menu-button').trigger('click');
   });
+
+  var $animation = $('#mosaic-wrapper');
+  var $window = $(window);
+  $window.on('scroll resize', check_if_in_view);
+  $window.trigger('scroll');
+  
+  function check_if_in_view() {
+    var window_height = $window.height();
+    var window_top_position = $window.scrollTop();
+    var window_bottom_position = (window_top_position + window_height);
+
+    $.each($animation, function() {
+      var $element = $(this);
+      var element_height = $element.outerHeight();
+      var element_top_position = $element.offset().top;
+      var element_bottom_position = (element_top_position + element_height);
+
+      //check to see if this current container is within viewport
+      if ((element_bottom_position >= window_top_position) &&
+          (element_top_position <= window_bottom_position)) {
+        $element.addClass('in-view');
+        $('#mosaic-wrapper.in-view img').each(function(){
+          var order = $(this).data('order');
+          var vertPos = $(this).data('vert');
+          var horizPos = $(this).data('horz');
+          var animationDelay = order + 0.5 + 's';
+          $(this).removeClass('start').addClass('fadeIn');
+          $(this).css({'top' : vertPos, 'left' : horizPos, 'animation-delay' : animationDelay, 'z-index' : order });
+        });
+      } else {
+        $element.removeClass('in-view');
+        $('#mosaic-wrapper img').removeClass('fadeIn').addClass('start');
+      }
+    });
+  }
   
 });
 </script>
