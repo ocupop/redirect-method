@@ -13,8 +13,8 @@ Global
 ----------------------------------------- */
 
 a {
-  &:hover {
-    text-decoration: none;
+  &:hover, &:focus, &:active {
+    outline: none;
   }
   &.underline {
     text-decoration: underline;
@@ -37,6 +37,11 @@ p  {
   margin-bottom: 20px;
 }
 
+button {
+  &:focus, &:active {
+    outline: none;
+  }
+}
 /* -----------------------------------------
 DOM
 ----------------------------------------- */
@@ -121,11 +126,13 @@ DOM
         color: #fff;
         text-transform: uppercase;
         font-weight: 500;
+        text-decoration: none;
         &:hover {
           color: $brand-primary;
         }
         &:hover, &:active, &:visited, &:focus {
           background: transparent;
+          text-decoration: none;
         }
       }
     }
@@ -177,6 +184,7 @@ DOM
       font-size: 17px;
       &:hover {
         color: #de410e;
+        text-decoration: none;
       }
     }
     .btn {
@@ -390,6 +398,10 @@ Utility Classes
     a {
       color: #fff;
       font-size: 23px;
+      text-decoration: none;
+      &:focus, &:active, &:hover {
+        text-decoration: none;
+      }
     }
   }
 }
