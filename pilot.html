@@ -19,6 +19,8 @@ $(document).on('ready', function(){
     top: 40
   });
   $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+    var target_scroll = $('#pilot-presentation').offset();
+    $('html, body').animate({scrollTop: target_scroll.top}, "slow");
     if($('.left-column').hasClass('open')){
       $('.left-column').removeClass('open');
     }
@@ -31,17 +33,13 @@ $(document).on('ready', function(){
     window.console.log(active_tab);
     $('.sidenav a[href="'+ active_tab +'"]').tab('show')
   });
-  // open specific tab on page reload for pilot tabs
-  var params = '#' + window.location.search.substring(1);
-  window.console.log(params);
-  if (params.indexOf('research') > -1 ) {
-    window.console.log('true');
-  }
+  var hash = window.location.hash;
+  window.console.log('substring is', hash);
   $('a[data-toggle="tab"]').each(function(){
     var target_scroll = $('#pilot-presentation').offset();
     var href = $(this).attr('href');
     window.console.log(href);
-    if($(this).attr('href') == params){
+    if($(this).attr('href') == hash){
       $('html, body').animate({scrollTop: target_scroll.top}, "slow");
       window.console.log('match');
       $(this).tab('show');
