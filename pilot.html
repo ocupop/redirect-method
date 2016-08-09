@@ -13,6 +13,11 @@ description:
 
 <script>
 $(document).on('ready', function(){
+  $('.sidenav').stickit({
+    screenMinWidth: 992,
+    scope: StickScope.Document,
+    top: 40
+  });
   $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
     if($('.left-column').hasClass('open')){
       $('.left-column').removeClass('open');
