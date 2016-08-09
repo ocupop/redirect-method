@@ -15,6 +15,7 @@ Global
 a {
   &:hover, &:focus, &:active {
     outline: none;
+    text-decoration: none;
   }
   &.underline {
     text-decoration: underline;

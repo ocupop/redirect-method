@@ -12,13 +12,47 @@ description:
 </div>
 
 <script>
+
+
+// check for hash in url, show correct tab if match
+var hash = window.location.hash;
+window.console.log('substring is', hash);
+function checkHash(){
+  $('.sidenav a').each(function(){
+    var target_scroll = $('#pilot-presentation').offset();
+    var href = $(this).attr('href');
+    window.console.log(href);
+    if($(this).attr('href') == hash){
+      $('html, body').animate({scrollTop: target_scroll.top}, "slow");
+      window.console.log('match');
+      $(this).tab('show');
+    }
+  });
+}
+
 $(document).on('ready', function(){
+
+  // sidenav stickit settings
   $('.sidenav').stickit({
     screenMinWidth: 992,
     scope: StickScope.Document,
     top: 40
   });
-  $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+
+
+  var l = window.location.pathname + window.location.hash;
+  window.history.pushState('', 'Pilot: ', l);
+
+  $('.sidenav a').click(function (e) {
+    e.preventDefault()
+    var n = "Pilot"+$(this).text();
+    var l = window.location.pathname + $(this).attr('href');
+    window.history.pushState('', n, l);
+    $(this).tab('show')
+  })
+
+  // check if sidenav is open on mobile, if it is, close it on click
+  $('.sidenav a').on('shown.bs.tab', function (e) {
     var target_scroll = $('#pilot-presentation').offset();
     $('html, body').animate({scrollTop: target_scroll.top}, "slow");
     if($('.left-column').hasClass('open')){
@@ -33,22 +67,16 @@ $(document).on('ready', function(){
     window.console.log(active_tab);
     $('.sidenav a[href="'+ active_tab +'"]').tab('show')
   });
-  var hash = window.location.hash;
-  window.console.log('substring is', hash);
-  $('a[data-toggle="tab"]').each(function(){
-    var target_scroll = $('#pilot-presentation').offset();
-    var href = $(this).attr('href');
-    window.console.log(href);
-    if($(this).attr('href') == hash){
-      $('html, body').animate({scrollTop: target_scroll.top}, "slow");
-      window.console.log('match');
-      $(this).tab('show');
-    }
-  });
-  $('.html5-video-player').on('load', function(){
-    $('.ytp-playlist-menu-button').trigger('click');
-  });
 
+ 
+
+  checkHash();
+
+  window.addEventListener("hashchange", function(e) {
+    checkHash();
+  })
+
+  // scroll trigger for animation
   var $animation = $('#mosaic-wrapper');
   var $window = $(window);
   $window.on('scroll resize', check_if_in_view);
