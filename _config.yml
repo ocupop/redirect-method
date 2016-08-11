@@ -11,3 +11,4 @@ safe: false
 
 gems:
   - jekyll-bootstrap-sass
+  - jekyll-sitemap
