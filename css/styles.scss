@@ -5,6 +5,7 @@
 @import '_variables';
 @import '_mixins';
 @import '_animate';
+@import '_image-scroller';
 
 @import "bootstrap";
 
@@ -96,7 +97,7 @@ DOM
 }
 
 #mainnav {
-  padding-top: 70px;
+  padding-top: 50px;
   .flexnav {
     width: 100%;
     padding-left: 0;
@@ -572,6 +573,16 @@ Page specific
     &.fadeIn {
       animation-duration: 1s;
     }
+  }
+}
+
+#video-ads {
+  display: none;
+  transition: all 1s ease-in-out;
+  &.in-view {
+    display: block;
+    animation-duration: 2s;
+    animation-delay:6.5s;
   }
 }
 

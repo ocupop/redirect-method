@@ -1,0 +1,25 @@
+#scroller {
+  width: 750px; 
+  height: 500px; 
+  margin: 0 auto;
+  position: relative;
+  .innerScrollArea {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+ul {
+    padding: 0;
+    margin: 0;
+    position: relative;
+  li {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+      position: absolute;
+    }
+  }
+}

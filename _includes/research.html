@@ -36,9 +36,17 @@
       <div class="row">
         <div class="col-md-12">
           <div class="content editable">
-            <p>The focus of the research was on seeking out videos that appeared to be neutral in intention--including documentaries or citizen journalist footage that portray the world as the creators found it, rather than materials that appear specifically designed to counter ISIS. To get there, we used keyword searches to identify “hidden” counter-argument content -- that is, videos that are not necessarily well known, and often that were not designed with the explicit intention of refuting ISIS</p>
-            <p>We also found that video content featuring prominent individuals whose contributions deliberately contradict ISIS’s messaging were also helpful.</p>
-            <iframe width="770" height="350" src="https://www.youtube.com/embed/LlG2cvdfZeE?list=PL0I4bTGBHIMeCcbUq1jit5wKFmU0BOGhh&showinfo=1" frameborder="0" allowfullscreen></iframe>
+            <h1>What did we find?</h1>
+            <p>We found an abundance of videos to support our project and our focus of the research was on seeking out videos that appeared to be neutral in intention--including documentaries or citizen journalist footage that portray the world as the creators found it, rather than materials that appear specifically designed to counter ISIS. To get there, we used keyword searches to identify “hidden” counter-argument content -- that is, videos that are not necessarily well known, and often that were not designed with the explicit intention of refuting ISIS. We also found that video content featuring prominent individuals whose contributions deliberately contradict ISIS’s messaging were also helpful. </p>
+            <div id="scroller">
+              <div class="innerScrollArea">
+                <ul>
+                  <!-- Define photos here -->
+                  <li><img src="/img/stackedvideoanimation.jpg" /></li>
+                </ul>
+              </div>
+            </div>
+            
             <div id="recruitment">
               <h1>What did we learn?</h1>
               <p><em>We identified 5 ISIS recruitment narratives that are recurring in ISIS’s official media:</em></p>
@@ -120,6 +128,51 @@
       </div>
     </div>
   </section>
+
+  <script type="text/javascript">
+      $(function(){
+          var scroller = $('#scroller div.innerScrollArea');
+          var scrollerContent = scroller.children('ul');
+          scrollerContent.children().clone().appendTo(scrollerContent);
+          var curX = 0;
+          scrollerContent.children().each(function(){
+              var $this = $(this);
+              $this.css('left', curX);
+              curX += $this.outerWidth(true);
+          });
+          var fullW = curX / 2;
+          var viewportW = scroller.width();
+
+          // Scrolling speed management
+          var controller = {curSpeed:0, fullSpeed:2};
+          var $controller = $(controller);
+          var tweenToNewSpeed = function(newSpeed, duration)
+          {
+              if (duration === undefined)
+                  duration = 600;
+              $controller.stop(true).animate({curSpeed:newSpeed}, duration);
+          };
+
+          // Pause on hover
+          scroller.hover(function(){
+              tweenToNewSpeed(0);
+          }, function(){
+              tweenToNewSpeed(controller.fullSpeed);
+          });
+
+          // Scrolling management; start the automatical scrolling
+          var doScroll = function()
+          {
+              var curX = scroller.scrollLeft();
+              var newX = curX + controller.curSpeed;
+              if (newX > fullW*2 - viewportW)
+                  newX -= fullW;
+              scroller.scrollLeft(newX);
+          };
+          setInterval(doScroll, 20);
+          tweenToNewSpeed(controller.fullSpeed);
+      });
+  </script>
 
   <footer class="section-footer">
     <div class="container">
