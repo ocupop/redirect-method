@@ -1,0 +1,22 @@
+{% extends template.self %}
+{% block book_header %}
+<div class="book-header-intro">
+  <div class="container">
+    <h1>The Redirect Method Blueprint</h1>
+    <h4>Our step-by-step set of instructions and tips for replicating the Redirect Method</h4>
+    <a href="#"><span class="arrow-down"></span>Download The Redirect Method Blueprint PDF</a>
+    <a href="#"><span class="arrow-right"></span>View on Gibook</a>
+  </div>
+</div>
+<div class="book-header" role="navigation">
+    {% if glossary.path %}
+    <a href="{{ ('/' + glossary.path)|resolveFile }}" class="btn pull-left" aria-label="{{ "GLOSSARY_OPEN"|t }}"><i class="fa fa-sort-alpha-asc"></i></a>
+    {% endif %}
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="{{ "/"|resolveFile }}" >{{ page.title }}</a>
+    </h1>
+</div>
+{% endblock %}

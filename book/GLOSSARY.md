@@ -1,0 +1,4 @@
+# Glossary
+
+## Campaign preparation
+
