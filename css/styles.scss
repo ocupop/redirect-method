@@ -312,6 +312,37 @@ Utility Classes
   }
 }
 
+//image slider variables
+$img-w: 2610px;
+$img-h: 520px;
+$shrink: 1;
+$ratio: 1 / $shrink;
+$speed: 30s;
+
+.slider-wrapper {
+  position: relative;
+  height: 520px;
+  .slider {
+    position: absolute;
+    width: 100%;
+    top: calc(50% - #{$img-h * $ratio / 2});
+    overflow: hidden;
+    .slider-row {
+      width: $img-w * $ratio;
+      height: $img-h * $ratio;
+      background-image: url(../img/stackedvideoanimation.jpg);
+      background-size: $img-w * $ratio $img-h * $ratio;
+      animation: slide $speed linear infinite;    
+    }
+  }
+}
+
+
+@keyframes slide {
+  from { background-position-x: 0; }
+  to   { background-position-x: -$img-w * $ratio; }
+}
+
 .gray-light {
   background-color: $gray-light;
 }
