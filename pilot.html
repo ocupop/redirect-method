@@ -96,6 +96,7 @@ $(document).on('ready', function(){
       if ((element_bottom_position >= window_top_position) &&
           (element_top_position <= window_bottom_position)) {
         $element.addClass('in-view');
+        $('#video-ads').addClass('in-view animated fadeIn');
         $('#mosaic-wrapper.in-view img').each(function(){
           var order = $(this).data('order');
           var vertPos = $(this).data('vert');
@@ -107,6 +108,7 @@ $(document).on('ready', function(){
       } else {
         $element.removeClass('in-view');
         $('#mosaic-wrapper img').removeClass('fadeIn').addClass('start');
+        $('#video-ads').removeClass('in-view animated fadeIn');
       }
     });
   }
