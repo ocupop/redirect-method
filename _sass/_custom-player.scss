@@ -1,0 +1,50 @@
+.customPlayer {
+  color: #fff;
+  background-color: #000;
+  .playlist-details {
+    display: inline-block;
+    line-height: 2em;
+    float: right;
+    margin-right: 10px;
+    color: $gray;
+  }
+  .active-title {
+    display: block;
+    line-height: 2em;
+    padding-left: 10px;
+    border-top: 1px solid $gray-light;
+  }
+  .thumbnav {
+    background-color: $gray-dark;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 10px;
+    overflow: hidden;
+    .video-thumb {
+      margin: 5px;
+      border: 1px solid transparent;
+      img {
+        height: 100px;
+        margin: 5px;
+      }
+      &.active {
+        border-color: $gray-light;
+      }
+    }
+  }
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
