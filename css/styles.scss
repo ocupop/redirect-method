@@ -614,10 +614,11 @@ Page specific
 #video-ads {
   display: none;
   transition: all 1s ease-in-out;
+  margin-top: 20px;
   &.in-view {
     display: block;
     animation-duration: 2s;
-    animation-delay:6.5s;
+    animation-delay:7s;
   }
 }
 
