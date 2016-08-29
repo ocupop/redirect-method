@@ -579,7 +579,7 @@
 
 	.yesp .yesp-hp {
 		clear: both;
-		height: auto;
+		height: 90px;
 		background: #333 url(../images/ajax.gif) no-repeat center center;
 		overflow: hidden;
 		width: 100%;
@@ -588,7 +588,6 @@
 		.yesp .yesp-hp-videos {
 			/*width: 1330px;*/
 			width: 50px;
-			margin: 10px;
 		}
 
 		.yesp .ps-scrollbar-x-rail {
@@ -666,7 +665,7 @@
 			left: 0;
 			background: rgba(0,0,0,.75);
 			width: 100%;
-			height: auto;
+			height: 90;
 			-webkit-transition: top .2s, opacity .2s;
 			-moz-transition: top .2s, opacity .2s;
 			-o-transition: top .2s, opacity .2s;
