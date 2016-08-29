@@ -1,4 +1,4 @@
-.customPlayer {
+.customplayer {
   color: #fff;
   background-color: #000;
   .playlist-details {
@@ -36,12 +36,12 @@
   }
 }
 
-.videoWrapper {
+.videowrapper {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
   height: 0;
 }
-.videoWrapper iframe {
+.videowrapper iframe {
   position: absolute;
   top: 0;
   left: 0;

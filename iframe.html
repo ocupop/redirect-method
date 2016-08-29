@@ -3,16 +3,25 @@ layout: page
 title: The Rami Method | example iframe embed
 ---
 
+- take array from data attribute attached to wrapping div
+- filter array to validated array
+  - Validating array submit ajax request to youtube
+- Initiate player with array of validated video 
+- insert dom for player controls
+- attach event listeners to inserted DOM
+
+
+
 <section>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="customPlayer" data-playlist="M7lc1UVf-VE, z1X-HWPbeD4">
-          <div class="videoWrapper">
+        <div class="customplayer" data-playlist="M7lc1UVf-VE, z1X-HWPbeD4">
+          <div class="videowrapper">
             <div id="player1" class="player"></div>
           </div>
           <div class="playlist">
-            <span class="playlist-details">Playlist Name - 1/3 Videos</span>
+            <p class="playlist-details">Playlist Name - <span class="current-index">1</span>/<span class="playlist-length">3</span> Videos</p>
             <span class="active-title">Current Video Name</span>
             <ul class="thumbnav"></ul>
           </div>
@@ -39,7 +48,8 @@ title: The Rami Method | example iframe embed
         window.console.log(data);
         if (data.items.length > 0) {
           // Display thumbnail
-          $('.thumbnav').append("<li class='video-thumb'><img src='http://img.youtube.com/vi/"+data.items[0].id+"/0.jpg''></li>");
+          var $thumb = "<li class='video-thumb' data-vid='"+video_ids[counter]+"'><img src='http://img.youtube.com/vi/"+data.items[0].id+"/0.jpg''></li>";
+          $('.thumbnav').append($thumb);
         } else {
           window.console.log("INVALID ID");
           // console.log("STATUS:",status);
@@ -98,6 +108,10 @@ title: The Rami Method | example iframe embed
   tag.src = "https://www.youtube.com/iframe_api";
   var firstScriptTag = document.getElementsByTagName('script')[0];
   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  $(document).on('ready', function() {
+
+  });
 
 
 </script>
