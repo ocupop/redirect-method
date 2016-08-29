@@ -11,107 +11,151 @@ title: The Pilot
 </div>
 
 <script>
-
-
-// check for hash in url, show correct tab if match
-var hash = window.location.hash;
-window.console.log('substring is', hash);
-function checkHash(){
-  $('.sidenav a').each(function(){
-    var target_scroll = $('#pilot-presentation').offset();
-    var href = $(this).attr('href');
-    window.console.log(href);
-    if($(this).attr('href') == hash){
-      $('html, body').animate({scrollTop: target_scroll.top}, "slow");
-      window.console.log('match');
-      $(this).tab('show');
-    }
-  });
-}
-
-$(document).on('ready', function(){
-
-  // sidenav stickit settings
-  $('.sidenav').stickit({
-    screenMinWidth: 992,
-    scope: StickScope.Document,
-    top: 40
-  });
-
-
-  var l = window.location.pathname + window.location.hash;
-  window.history.pushState('', 'Pilot: ', l);
-
-  $('.sidenav a').click(function (e) {
-    e.preventDefault()
-    var n = "Pilot"+$(this).text();
-    var l = window.location.pathname + $(this).attr('href');
-    window.history.pushState('', n, l);
-    $(this).tab('show')
-  })
-
-  // check if sidenav is open on mobile, if it is, close it on click
-  $('.sidenav a').on('shown.bs.tab', function (e) {
-    var target_scroll = $('#pilot-presentation').offset();
-    $('html, body').animate({scrollTop: target_scroll.top}, "slow");
-    if($('.left-column').hasClass('open')){
-      $('.left-column').removeClass('open');
-    }
-  })
-  // scroll user back up to top of pilot presentation and show next slide
-  $('.next').on('click', function(){
-    var active_tab = $(this).attr('href');
-    var target_scroll = $('#pilot-presentation').offset();
-    $('html, body').animate({scrollTop: target_scroll.top}, "slow");
-    window.console.log(active_tab);
-    $('.sidenav a[href="'+ active_tab +'"]').tab('show')
-  });
-
- 
-
-  checkHash();
-
-  window.addEventListener("hashchange", function(e) {
-    checkHash();
-  })
-
-  // scroll trigger for animation
-  var $animation = $('#mosaic-wrapper');
-  var $window = $(window);
-  $window.on('scroll resize', check_if_in_view);
-  $window.trigger('scroll');
-  
-  function check_if_in_view() {
-    var window_height = $window.height();
-    var window_top_position = $window.scrollTop();
-    var window_bottom_position = (window_top_position + window_height);
-
-    $.each($animation, function() {
-      var $element = $(this);
-      var element_height = $element.outerHeight();
-      var element_top_position = $element.offset().top;
-      var element_bottom_position = (element_top_position + element_height);
-
-      //check to see if this current container is within viewport
-      if ((element_bottom_position >= window_top_position) &&
-          (element_top_position <= window_bottom_position)) {
-        $element.addClass('in-view');
-        $('#video-ads').addClass('in-view animated fadeIn');
-        $('#mosaic-wrapper.in-view img').each(function(){
-          var order = $(this).data('order');
-          var vertPos = $(this).data('vert');
-          var horizPos = $(this).data('horz');
-          var animationDelay = order + 0.5 + 's';
-          $(this).removeClass('start').addClass('fadeIn');
-          $(this).css({'top' : vertPos, 'left' : horizPos, 'animation-delay' : animationDelay, 'z-index' : order });
-        });
-      } else {
-        $element.removeClass('in-view');
-        $('#mosaic-wrapper img').removeClass('fadeIn').addClass('start');
-        $('#video-ads').removeClass('in-view animated fadeIn');
+  // check for hash in url, show correct tab if match
+  var hash = window.location.hash;
+  function checkHash(){
+    $('.sidenav a').each(function(){
+      var target_scroll = $('#pilot-presentation').offset();
+      var href = $(this).attr('href');
+      // window.console.log(href);
+      if($(this).attr('href') == hash){
+        $('html, body').animate({scrollTop: target_scroll.top}, "slow");
+        window.console.log('match');
+        $(this).tab('show');
       }
     });
   }
-  
-});
+
+  $(document).on('ready', function(){
+
+    // sidenav stickit settings
+    $('.sidenav').stickit({
+      screenMinWidth: 992,
+      scope: StickScope.Document,
+      top: 40
+    });
+
+
+    var l = window.location.pathname + window.location.hash;
+    window.history.pushState('', 'Pilot: ', l);
+
+    $('.sidenav a').click(function (e) {
+      e.preventDefault()
+      var n = "Pilot"+$(this).text();
+      var l = window.location.pathname + $(this).attr('href');
+      window.history.pushState('', n, l);
+      $(this).tab('show')
+    })
+
+    // check if sidenav is open on mobile, if it is, close it on click
+    $('.sidenav a').on('shown.bs.tab', function (e) {
+      var target_scroll = $('#pilot-presentation').offset();
+      $('html, body').animate({scrollTop: target_scroll.top}, "slow");
+      if($('.left-column').hasClass('open')){
+        $('.left-column').removeClass('open');
+      }
+    })
+    // scroll user back up to top of pilot presentation and show next slide
+    $('.next').on('click', function(){
+      var active_tab = $(this).attr('href');
+      var target_scroll = $('#pilot-presentation').offset();
+      $('html, body').animate({scrollTop: target_scroll.top}, "slow");
+      // window.console.log(active_tab);
+      $('.sidenav a[href="'+ active_tab +'"]').tab('show')
+    });
+
+   
+
+    checkHash();
+
+    window.addEventListener("hashchange", function(e) {
+      checkHash();
+    })
+
+    // scroll trigger for animation
+    var $animation = $('#mosaic-wrapper');
+    var $window = $(window);
+    $window.on('scroll resize', check_if_in_view);
+    $window.trigger('scroll');
+    
+    function check_if_in_view() {
+      var window_height = $window.height();
+      var window_top_position = $window.scrollTop();
+      var window_bottom_position = (window_top_position + window_height);
+
+      $.each($animation, function() {
+        var $element = $(this);
+        var element_height = $element.outerHeight();
+        var element_top_position = $element.offset().top;
+        var element_bottom_position = (element_top_position + element_height);
+
+        //check to see if this current container is within viewport
+        if ((element_bottom_position >= window_top_position) &&
+            (element_top_position <= window_bottom_position)) {
+          $element.addClass('in-view');
+          $('#video-ads').addClass('in-view animated fadeIn');
+          $('#mosaic-wrapper.in-view img').each(function(){
+            var order = $(this).data('order');
+            var vertPos = $(this).data('vert');
+            var horizPos = $(this).data('horz');
+            var animationDelay = order + 0.5 + 's';
+            $(this).removeClass('start').addClass('fadeIn');
+            $(this).css({'top' : vertPos, 'left' : horizPos, 'animation-delay' : animationDelay, 'z-index' : order });
+          });
+        } else {
+          $element.removeClass('in-view');
+          $('#mosaic-wrapper img').removeClass('fadeIn').addClass('start');
+          $('#video-ads').removeClass('in-view animated fadeIn');
+        }
+      });
+    }
+
+
+    $('.player').each(function() {
+      var videos = $(this).attr('data-videos').split(',');
+      $(this).youtube_video({
+        playlist: false,
+        channel: false,
+        user: false,
+        videos: videos,
+        max_results: 8,
+        shuffle: false,
+        pagination: true,
+        continuous: true,
+        first_video: 0,
+        show_playlist: 'auto',
+        playlist_type: 'horizontal',
+        show_channel_in_playlist:true,
+        show_channel_in_title: true,
+        width: false,
+        show_annotations: false,
+        now_playing_text: 'Now Playing',
+        load_more_text: 'Load More',
+        autoplay: false,
+        force_hd: false,
+        hide_youtube_logo: false,
+        play_control: true,
+        time_indicator: 'full',
+        volume_control: true,
+        share_control: true,
+        fwd_bck_control: true,
+        youtube_link_control: true,
+        fullscreen_control: true,
+        playlist_toggle_control:true,
+        volume: 0,
+        show_controls_on_load: true,
+        show_controls_on_pause: true,
+        show_controls_on_play: false,
+        player_vars: {},
+        colors: {},
+         
+        on_load: function() {},
+        on_done_loading: function() {},
+        on_state_change: function() {},
+        on_seek: function() {},
+        on_volume: function() {},
+        on_time_update: function() {},   
+      });
+    });
+  });
 </script>
