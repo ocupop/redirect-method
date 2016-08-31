@@ -12,10 +12,15 @@ $(function() {
       }
     }
   });
+
+  $('[data-toggle="tooltip"]').tooltip({
+    placement: 'auto right'
+  });
 });
 
+
+
 $(document).on('ready', function(){
-  $('[data-toggle="tooltip"]').tooltip()
   $('.subnav-trigger').on('click', function(){
     $('.left-column').toggleClass('open');
   });
