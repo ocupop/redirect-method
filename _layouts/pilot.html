@@ -27,25 +27,27 @@ layout: default
 </div>
 
 <script>
-  // check for hash in url, show correct tab if match
-  var hash = window.location.hash;
-  var l = window.location.pathname + window.location.hash;
-  window.history.pushState('', 'Pilot: ', l);
 
-  function checkHash(){
+  function scrollTo(value) {
+    $('html, body').animate({scrollTop: value}, "slow");
+  }
+
+  function activateTab(hash) {
+    var target = $(hash).offset().top;
+
     $('.sidenav a').each(function(){
-      var target_scroll = $('#pilot-presentation').offset();
       var href = $(this).attr('href');
-
-      if($(this).attr('href') == hash){
-        $('html, body').animate({scrollTop: target_scroll.top}, "slow");
+      if(href == hash){
+        target = $('#pilot-presentation').offset().top;
         $(this).tab('show');
       }
     });
+
+    scrollTo(target);
   }
 
   $(document).on('ready', function(){
-
+    activateTab(window.location.hash);
 
     $('.sidenav').stickit({
       screenMinWidth: 992,
@@ -57,37 +59,20 @@ layout: default
       $('.left-column').toggleClass('open');
     });
 
-    $('.sidenav a').on('click', function (e) {
-      e.preventDefault()
-      var n = "Pilot"+$(this).text();
-      var l = window.location.pathname + $(this).attr('href');
-      window.history.pushState('', n, l);
-      $(this).tab('show')
+    $('.sidenav a', '.next').on('click', function (e) {
+      e.preventDefault();
+      var l = window.location.pathname + $(this)[0].hash.substr(1);
+      window.history.pushState('', '{{ site.title }}: ', l);
     })
 
     // check if sidenav is open on mobile, if it is, close it on click
     $('.sidenav a').on('shown.bs.tab', function (e) {
-      var target_scroll = $('#pilot-presentation').offset();
-      $('html, body').animate({scrollTop: target_scroll.top}, "slow");
-      if($('.left-column').hasClass('open')){
-        $('.left-column').removeClass('open');
-      }
-    })
-    // scroll user back up to top of pilot presentation and show next slide
-    $('.next').on('click', function(){
-      var active_tab = $(this).attr('href');
-      var target_scroll = $('#pilot-presentation').offset();
-      $('html, body').animate({scrollTop: target_scroll.top}, "slow");
-      // window.console.log(active_tab);
-      $('.sidenav a[href="'+ active_tab +'"]').tab('show')
+      // close mobile menu
+      $('.left-column').removeClass('open');
     });
 
-   
-
-    checkHash();
-
     window.addEventListener("hashchange", function(e) {
-      checkHash();
+      activateTab(window.location.hash);
     })
 
     // scroll trigger for animation

@@ -13,6 +13,7 @@ $(function() {
     }
   });
 
+  // Initialize tooltip
   $('[data-toggle="tooltip"]').tooltip({
     placement: 'auto right'
   });
