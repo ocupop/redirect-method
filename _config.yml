@@ -11,6 +11,7 @@ gitbook_url: https://tbeck.gitbooks.io/the-redirect-method/content/
 # Build settings
 safe: false
 
+
 gems:
   - jekyll-bootstrap-sass
   - jekyll-sitemap
