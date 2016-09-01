@@ -1,10 +1,10 @@
 version: 3.0.3
 
 # Site settings
-title: The Rami Method
+title: The Redirect Method
 baseurl: "" # the subpath of your site, e.g. /clientname
 url: "http://lemon-stork1.cloudvent.net" # the base hostname & protocol for your site
-permalink: /:basename/:path/
+permalink: pretty
 
 # Build settings
 safe: false
