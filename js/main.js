@@ -137,11 +137,8 @@ $(document).on('ready', function() {
     $('.left-column').toggleClass('open');
   });
 
-  $('.sidenav a', '.next').on('click', function (e) {
-    // e.preventDefault();
-    // var l = window.location.pathname + $(this)[0].hash.substr(1);
-    // window.history.pushState('', '{{ site.title }}: ', l);
-    // $('.left-column').removeClass('open');
+  $('.sidenav a, .next').on('click', function (e) {
+    $('.left-column').removeClass('open');
   });
 
 
@@ -153,14 +150,14 @@ $(document).on('ready', function() {
         // window.console.log('Enter triggered with direction ' + direction);
       },
       entered: function(direction) {
-        window.console.log('Entered triggered with direction ' + direction);
+        // window.console.log('Entered triggered with direction ' + direction);
         $(this.element).find('img').addClass('animate');
       },
       exit: function(direction) {
         // window.console.log('Exit triggered with direction ' + direction);
       },
       exited: function(direction) {
-        window.console.log('Exited triggered with direction ' + direction);
+        // window.console.log('Exited triggered with direction ' + direction);
         $(this.element).find('img').removeClass('animate');
       }
     })
