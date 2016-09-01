@@ -1,0 +1,19 @@
+.mosaic-wrapper {
+  position: relative;
+  height: 295px;
+  width: 295px;
+  max-width: 100%;
+  background-image: url(../img/text_ads.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 20px 0;
+  img {
+    position: absolute;
+    top:0;
+    left:0;
+    max-width: 50%;
+    opacity: 0;
+    // @include transition(1s);
+  }
+}

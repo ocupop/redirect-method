@@ -1,4 +1,21 @@
-$(function() {
+  // Initialize tooltip
+  $('[data-toggle="tooltip"]').tooltip({
+    placement: 'auto right'
+  });
+
+  // Initialize Sticky side menu
+  $('.sidenav').stickit({
+    screenMinWidth: 992,
+    scope: StickScope.Document,
+    top: 40
+  });
+
+  // Add listener for hash changes
+  window.addEventListener("hashchange", function(e) {
+    activateTab(window.location.hash);
+  });
+
+  // Add listner for click to go back top
   $('#top').on('click', function() {
     if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
 
@@ -13,14 +30,26 @@ $(function() {
     }
   });
 
-  // Initialize tooltip
-  $('[data-toggle="tooltip"]').tooltip({
-    placement: 'auto right'
-  });
-});
 
-$(document).on('ready', function() {
-  // Initialize custom youtube player
+function scrollTo(value) {
+  $('html, body').animate({scrollTop: value}, "slow");
+}
+
+function activateTab(hash) {
+  var target = $(hash).offset().top;
+
+  $('.sidenav a').each(function(){
+    var href = $(this).attr('href');
+    if(href == hash){
+      target = $('#pilot-presentation').offset().top;
+      $(this).tab('show');
+    }
+  });
+
+  scrollTo(target);
+}
+
+function activatePlayers() {
   $('.player').each(function() {
     var videos = $(this).attr('data-videos').split(',');
     $(this).youtube_video({
@@ -83,4 +112,62 @@ $(document).on('ready', function() {
       on_time_update: function() {},   
     });
   });
+}
+
+
+$(document).on('ready', function() {
+  // Activate tab with hash
+  if(window.location.hash) {
+    activateTab(window.location.hash);
+  }
+
+  // Initialize custom youtube player
+  activatePlayers();
+
+  // Position mosaic images
+  $('.mosaic-wrapper img').each(function() {
+    $(this).css({
+      'top' : $(this).attr('data-vert'),
+      'left' : $(this).attr('data-horz'),
+      'z-index' : $(this).attr('data-order')
+    });
+  });
+
+  $('.subnav-trigger').on('click', function(){
+    $('.left-column').toggleClass('open');
+  });
+
+  $('.sidenav a', '.next').on('click', function (e) {
+    e.preventDefault();
+    var l = window.location.pathname + $(this)[0].hash.substr(1);
+    window.history.pushState('', '{{ site.title }}: ', l);
+    $('.left-column').removeClass('open');
+  });
+
+
+  $('.scroll-animate').each(function() {
+    var inview = new Waypoint.Inview({
+      element: $(this)[0],
+      enter: function(direction) {
+        window.console.log('Enter triggered with direction ' + direction);
+      },
+      entered: function(direction) {
+        window.console.log('Entered triggered with direction ' + direction)
+        $(this.element).find('img').each(function(i, val){
+          var $img = $(this),
+              order = $img.attr('data-order');
+          setTimeout(function(){ $img.fadeTo(500, 1)}, 1000 * order);
+        });
+      },
+      exit: function(direction) {
+        window.console.log('Exit triggered with direction ' + direction);
+      },
+      exited: function(direction) {
+        window.console.log('Exited triggered with direction ' + direction)
+        $(this.element).find('img').hide();
+      }
+    })
+  });
 });
+
+
