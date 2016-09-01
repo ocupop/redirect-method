@@ -6,7 +6,8 @@
   transition: $property $duration $effect;
 }
 
-@mixin animation($duration: 0.5s, $delay: 0s, $count: 1, $direction: normal) {
+@mixin animation($effect: fadeIn, $duration: 0.5s, $delay: 0s, $count: 1, $direction: normal) {
+  animation-name: $effect;
   animation-duration: $duration;
   animation-delay: ($delay);
   animation-iteration-count: $count;

@@ -138,33 +138,30 @@ $(document).on('ready', function() {
   });
 
   $('.sidenav a', '.next').on('click', function (e) {
-    e.preventDefault();
-    var l = window.location.pathname + $(this)[0].hash.substr(1);
-    window.history.pushState('', '{{ site.title }}: ', l);
-    $('.left-column').removeClass('open');
+    // e.preventDefault();
+    // var l = window.location.pathname + $(this)[0].hash.substr(1);
+    // window.history.pushState('', '{{ site.title }}: ', l);
+    // $('.left-column').removeClass('open');
   });
 
 
   $('.scroll-animate').each(function() {
-    var inview = new Waypoint.Inview({
+    $(this).find('img').css({opacity: 0});
+    new Waypoint.Inview({
       element: $(this)[0],
       enter: function(direction) {
-        window.console.log('Enter triggered with direction ' + direction);
+        // window.console.log('Enter triggered with direction ' + direction);
       },
       entered: function(direction) {
-        window.console.log('Entered triggered with direction ' + direction)
-        $(this.element).find('img').each(function(i, val){
-          var $img = $(this),
-              order = $img.attr('data-order');
-          setTimeout(function(){ $img.fadeTo(500, 1)}, 1000 * order);
-        });
+        window.console.log('Entered triggered with direction ' + direction);
+        $(this.element).find('img').addClass('animate');
       },
       exit: function(direction) {
-        window.console.log('Exit triggered with direction ' + direction);
+        // window.console.log('Exit triggered with direction ' + direction);
       },
       exited: function(direction) {
-        window.console.log('Exited triggered with direction ' + direction)
-        $(this.element).find('img').css({opacity: 0});
+        window.console.log('Exited triggered with direction ' + direction);
+        $(this.element).find('img').removeClass('animate');
       }
     })
   });
