@@ -51,9 +51,10 @@ function activateTab(hash) {
 
 function activatePlayers() {
   $('.player').each(function() {
-    var videos = $(this).attr('data-videos').split(',');
+    var videos = $(this).attr('data-videos') ? $(this).attr('data-videos').split(',') : false,
+        list = $(this).attr('data-list') ? $(this).attr('data-list') : false;
     $(this).youtube_video({
-      playlist: false,
+      playlist: list,
       channel: false,
       user: false,
       videos: videos,
