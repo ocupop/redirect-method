@@ -169,7 +169,8 @@ DOM
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  min-height: 450px;
+  min-height: 375px;
+  padding: 30px 0;
   &.intro-home {
     background-image: url(../img/bg-intro.png);
   }
