@@ -138,6 +138,7 @@ $(document).on('ready', function() {
   });
 
   $('.sidenav a, .next').on('click', function (e) {
+    activateTab($(this).attr('href'));
     $('.left-column').removeClass('open');
   });
 
