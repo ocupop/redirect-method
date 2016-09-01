@@ -164,7 +164,7 @@ $(document).on('ready', function() {
       },
       exited: function(direction) {
         window.console.log('Exited triggered with direction ' + direction)
-        $(this.element).find('img').hide();
+        $(this.element).find('img').css({opacity: 0});
       }
     })
   });
