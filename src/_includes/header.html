@@ -1,4 +1,7 @@
 <div id="page-header">
+  <div id="downloadnav">
+    <a href="{{ site.pdf }}" download><i class="icon icon-download"></i>Download The Redirect Method PDF</a>
+  </div>
   <div id="mainnav">
     <div class="container">
       <div class="navbar-header">
@@ -11,9 +14,9 @@
       </div>
       <div class="collapse navbar-collapse" id="mainnav-collapse">
         <ul class="flexnav">
-          <li {% if page.url =='/' %}class="active"{% endif %}><a href="{{ site.baseurl }}/">About</a></li>
-          <li {% if page.url =='/pilot/' %}class="active"{% endif %}><a href="{{ site.baseurl }}/pilot/">Pilot</a></li>
-          <li><a href="{{ site.baseurl }}/blueprint/">Blueprint</a></li>
+          <li {% if page.url =='/' %}class="active"{% endif %}><a href="{{ site.baseurl }}/">About The Method</a></li>
+          <li {% if page.url =='/pilot/' %}class="active"{% endif %}><a href="{{ site.baseurl }}/pilot/">The Pilot Experiment</a></li>
+          <li {% if page.url =='/blueprint/' %}class="active"{% endif %}><a href="{{ site.baseurl }}/blueprint/">Follow The Blueprint</a></li>
           <li {% if page.url =='/qa/' %}class="active"{% endif %}><a href="{{ site.baseurl }}/qa/">Q &amp; A</a></li>
         </ul>
       </div>
