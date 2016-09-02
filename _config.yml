@@ -9,7 +9,10 @@ permalink: pretty
 gitbook_url: https://tbeck.gitbooks.io/the-redirect-method/content/
 
 # Build settings
+port: 4001
 safe: false
+source: src
+exclude: ['gitbook/_layouts', 'gitbook/styles', 'gitbook/img']
 
 
 gems:

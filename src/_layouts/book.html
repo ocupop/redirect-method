@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<div id="banner">
+  <div class="container">
+    <div class="banner-col">
+      <img src="img/logo-wordmark.svg" class="brand" alt="The Redirect Method">
+    </div>
+    <div class="banner-col">
+      <h1>Replicate our process step by step with our blueprint.</h1>
+      <p>We’re hoping this document will give other interested in replicating the experiment an idea of what to expect in terms of planning, timeline, skills and resources. We’re also hoping others will “fork” and modify this set of instructions to add better, more effective steps and tips, or to adapt them to specific contexts. </p>
+    </div>
+  </div>
+</div>
+<div class="book-header-intro">
+  <div class="container">
+    <h1>The Redirect Method Blueprint</h1>
+    <h4>Our step-by-step set of instructions and tips for replicating the Redirect Method</h4>
+    <a href="#"><span class="arrow-down"></span>Download The Redirect Method Blueprint PDF</a>
+    <a href="#"><span class="arrow-right"></span>View on Gitbook</a>
+  </div>
+</div>
+<div class="book-header" role="navigation">
+    {% if glossary.path %}
+    <a href="{{ ('/' + glossary.path)|resolveFile }}" class="btn pull-left" aria-label="{{ "GLOSSARY_OPEN"|t }}"><i class="fa fa-sort-alpha-asc"></i></a>
+    {% endif %}
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="{{ "/"|resolveFile }}" >{{ page.title }}</a>
+    </h1>
+</div>
