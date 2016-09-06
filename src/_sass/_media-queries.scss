@@ -2,21 +2,24 @@
 Media Queries
 ----------------------------------------- */
 @media(max-width: 992px) {
-  .left-column {
-    width: 225px;
-    padding: 50px 0;
-    left: -225px;
-    top: 158px;
-    transition: all .5s ease;
-    z-index: 10;
-    &.open {
-      left: 0;
+  .sidebar-layout {
+    .left-column {
+      width: 225px;
+      padding: 50px 0;
+      left: -225px;
+      top: 158px;
+      margin-left: 0;
+      transition: all .5s ease;
+      z-index: 10;
+      &.open {
+        left: 0;
+      }
     }
-  }
 
-  .right-column {
-    margin: 0;
-    transition: all .5s ease;
+    .right-column {
+      margin: 0;
+      transition: all .5s ease;
+    }
   }
 
   .section-header {

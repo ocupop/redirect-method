@@ -263,80 +263,81 @@ Utility Classes
   background-color: $gray-dark;
   margin-left: 0;
   margin-right: 0;
-}
-
-
-.left-column {
-  position: absolute;
-  height: 100%;
-  // width: 30%;
-  padding: 50px 0;
-  background-color: $gray-dark;
-}
-.right-column {
-  margin-left: 30%;
-  background-image: url(../img/halftone_background_doublecolumn.png);
-  background-size: contain;
-  background-color: #fff;
-  .container {
-    max-width: 900px;
-    width: auto;
-    margin: 0 auto 0 40px;
-  }
-  header {
-    background-color: rgba(238,238,238,.65);
-  }
-  img {
-    padding-bottom: 25px;
-  }
-  iframe {
-    max-width: 100%;
-  }
-  strong {
-    letter-spacing: 1px;
-  }
-  li {
-    margin: 7px 0;
-  }
-  em {
-    font-size: 22px;
-  }
-}
-
-.sidenav {
-  list-style-type: none;
-  padding-left: 0;
-  margin-right: 20px;
-  margin-left: auto;
-  width: 250px;
-  li {
-    padding: 8px 0 8px 40px;
-    position: relative;
-    &.active {
-      &:before {
-        content: '';
-        display: block;
-        height: 100%;
-        width: 10px;
-        background-color: $brand-primary;
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
-      a {
-        color: $brand-primary;
-      }
-    }
-    a {
-      color: #fff;
-      font-size: 23px;
-      text-decoration: none;
-      &:focus, &:active, &:hover {
-        text-decoration: none;
+  .left-column {
+    position: absolute;
+    height: 100%;
+    padding: 50px 0;
+    margin: 0;
+    margin-left: calc(100vw * 0.3 - 250px);
+    background-color: $gray-dark;
+    .sidenav {
+      list-style-type: none;
+      padding-left: 0;
+      margin-right: 20px;
+      margin-left: auto;
+      width: 250px;
+      li {
+        padding: 8px 0 8px 40px;
+        position: relative;
+        &.active {
+          &:before {
+            content: '';
+            display: block;
+            height: 100%;
+            width: 10px;
+            background-color: $brand-primary;
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+          a {
+            color: $brand-primary;
+          }
+        }
+        a {
+          color: #fff;
+          font-size: 23px;
+          text-decoration: none;
+          &:focus, &:active, &:hover {
+            text-decoration: none;
+          }
+        }
       }
     }
   }
+  .right-column {
+    margin-left: 30%;
+    background-image: url(../img/halftone_background_doublecolumn.png);
+    background-size: contain;
+    background-color: #fff;
+    .container {
+      max-width: 900px;
+      width: auto;
+      margin: 0 auto 0 40px;
+    }
+    header {
+      background-color: rgba(238,238,238,.65);
+    }
+    img {
+      padding-bottom: 25px;
+    }
+    iframe {
+      max-width: 100%;
+    }
+    strong {
+      letter-spacing: 1px;
+    }
+    li {
+      margin: 7px 0;
+    }
+    em {
+      font-size: 22px;
+    }
+  }
 }
+
+
+
 
 .subnav-trigger {
   display: none;
