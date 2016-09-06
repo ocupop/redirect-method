@@ -152,10 +152,10 @@ $(document).on('ready', function() {
       element: $(this)[0],
       enter: function(direction) {
         // window.console.log('Enter triggered with direction ' + direction);
+        $(this.element).find('img').addClass('animate');
       },
       entered: function(direction) {
         // window.console.log('Entered triggered with direction ' + direction);
-        $(this.element).find('img').addClass('animate');
       },
       exit: function(direction) {
         // window.console.log('Exit triggered with direction ' + direction);
