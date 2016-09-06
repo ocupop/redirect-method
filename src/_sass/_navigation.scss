@@ -66,4 +66,11 @@
   a {
     color: #fff;
   }
+  .arrow-down {
+    background-color: #fff;
+    top: 2px;
+    &:before {
+      border-top-color: $orange;
+    }
+  }
 }
