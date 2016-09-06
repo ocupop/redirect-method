@@ -269,6 +269,7 @@ Utility Classes
 .left-column {
   position: absolute;
   height: 100%;
+  width: 30%;
   padding: 50px 0;
   background-color: $gray-dark;
 }
@@ -303,7 +304,6 @@ Utility Classes
   margin-right: 20px;
   margin-left: auto;
   width: 250px;
-  left: auto !important;
   li {
     padding: 8px 0 8px 40px;
     position: relative;
