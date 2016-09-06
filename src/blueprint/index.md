@@ -3,36 +3,199 @@ layout: book
 title: The Blueprint
 permalink: /blueprint/
 ---
-
-
-<h2>Campaign preparation</h2>
+<h2><a id="Campaign_preparation_0"></a>Campaign preparation</h2>
 <ol>
-   <li>
-      <h3>Identify the problem you are trying to solve through a campaign</h3>
-      <p>As a starting point, identify the problem you are confronting, and is key characteristics. During the pilot, the problem we identified was ISIS's ability to recruit through dissemination of particular myths, narratives, and calls to action.</p>
-   </li>
-   <li>
-      <h3>Identify what you want achieve</h3>
-      <p>Identify what needs to change to address the problem, and ensure you have a clear understanding of how a campaign will contribute to that change. Different campaigns have different desired outcomes. You may wish to undermine the ability of a group to recruit, you may wish to change the minds of people that have already joined or you may with to mobilise counter-activists against an extremist group. Having a clear aim is an essential component to a successful campaign.</p>
-   </li>
-   <li>
-      <h3>Map the extremist content you’re trying to address</h3>
-      <p>Many campaigns fail as they are based on assumptions rather than evidence. As such it is essential to map out the online content you are seeking to counter or undermine. For example, recruitment narratives are likely to change with regions, languages, targets, etc, so it is crucial in this step to engage experts on the type of extremism you are seeking to counter. It can be useful to begin the mapping process with pre-existing lists or databases of content online. In our case we found [Jihadology](http://jihadology.net)a useful starting point when mapping ISIS recruitment content. For far right extremism [resources](https://www.splcenter.org/hatewatch)maintained by the SPLC may prove helpful.</p>
-   </li>
-   <li>
-      <h3>Analyze this content to map the main recruitment narratives</h3>
-      <p>Each piece of content identified during step one should now be analysed and placed in the context of the broader extremist recruitment strategy. At this stage subject matter experts must be engaged in order to filter this content into a manageable selection of key narratives used by the extremist group. During the pilot we identified five key ISIS narratives. We found that engaging former extremists, defectors and security service personnel is a useful addition to engaging with academic experts in the field. The [Against Violent Extremism](http://www.againstviolentextremism.org) network allows organisations to connect with former extremists.</p>
-   </li>
-   <li>
-      <h3>Gather content that counters the main narratives you’ve identified</h3>
-      <p>Using your key narratives, start to gather video content that counters these narratives. In order to do this, use simple snowball sampling by searching for content countering your key narratives on Google and exploring available content. In addition to having researchers search for counter-content based on the key narratives, community activists and others should be engaged to make recommendations around effective content which may not be indexed accurately.</p>
-   </li>
-   <li>
-      <h3>Create a database of your counter-arguments</h3>
-      <p>Draw your counter-content into a database. Code this database by theme, content creator, video length, probable resonance with your target audience, production quality and any other factors which may be useful in the decision making process. As in previous steps, community activists and others should be engaged to make recommendations around the most effective content in this database.</p>
-   </li>
-   <li>
-      <h3>Select the videos you will use, start making possible playlists</h3>
-      <p>Pick the best videos in your database. Sort them into possible playlists, with each playlist corresponding to a theme you have identified in step #2. It may not be the case that your channel benefits from being too closely associated with your subject matter. During the pilot we deliberately built a channel that appeared to be a generic content aggregation channel.</p>
-   </li>
+<li>
+<h3><a id="Identify_the_problem_you_are_trying_to_solve_through_a_campaign_2"></a>Identify the problem you are trying to solve through a campaign</h3>
+<p>As a starting point, identify the problem you are confronting, and its key characteristics. During the pilot, the problem we identified was ISIS’s ability to recruit through dissemination of particular myths, narratives, and calls to action</p>
+</li>
+<li>
+<h3><a id="Identify_what_you_want_achieve_5"></a>Identify what you want achieve</h3>
+<p>Identify what needs to change to address the problem, and ensure you have a clear understanding of how a campaign will contribute to that change. Different campaigns have different desired outcomes. You may wish to undermine the ability of a group to recruit, you may wish to change the minds of people that have already joined or you may with to mobilise counter-activists against an extremist group. Having a clear aim is an essential component to a successful campaign.</p>
+</li>
+<li>
+<h3><a id="Map_the_extremist_content_youre_trying_to_address_8"></a>Map the extremist content you’re trying to address</h3>
+<p>Many campaigns fail as they are based on assumptions rather than evidence. As such it is essential to map out the online content you are seeking to counter or undermine. For example, recruitment narratives are likely to change with regions, languages, targets, etc, so it is crucial in this step to engage experts on the type of extremism you are seeking to counter. It can be useful to begin the mapping process with pre-existing lists or databases of content online. In our case we found <a href="http://jihadology.net">Jihadology</a>a useful starting point when mapping ISIS recruitment content. For far right extremism <a href="https://www.splcenter.org/hatewatch">resources</a>maintained by the SPLC may prove helpful.</p>
+</li>
+<li>
+<h3><a id="Analyze_this_content_to_map_the_main_recruitment_narratives_11"></a>Analyze this content to map the main recruitment narratives</h3>
+<p>Each piece of content identified during step one should now be analysed and placed in the context of the broader extremist recruitment strategy. At this stage subject matter experts must be engaged in order to filter this content into a manageable selection of key narratives used by the extremist group. During the pilot we identified five key ISIS narratives. We found that engaging former extremists, defectors and security service personnel is a useful addition to engaging with academic experts in the field. The <a href="http://www.againstviolentextremism.org">Against Violent Extremism</a> network allows organisations to connect with former extremists.</p>
+</li>
+<li>
+<h3><a id="Gather_content_that_counters_the_main_narratives_youve_identified_14"></a>Gather content that counters the main narratives you’ve identified</h3>
+<p>Using your key narratives, start to gather video content that counters these narratives. In order to do this, use simple snowball sampling by searching for content countering your key narratives on Google and exploring available content. In addition to having researchers search for counter-content based on the key narratives, community activists and others should be engaged to make recommendations around effective content which may not be indexed accurately.</p>
+</li>
+<li>
+<h3><a id="Create_a_database_of_your_counterarguments_17"></a>Create a database of your counter-arguments</h3>
+<p>Draw your counter-content into a database. Code this database by theme, content creator, video length, probable resonance with your target audience, production quality and any other factors which may be useful in the decision making process. As in previous steps, community activists and others should be engaged to make recommendations around the most effective content in this database.</p>
+</li>
+<li>
+<h3><a id="Select_the_videos_you_will_use_start_making_possible_playlists_20"></a>Select the videos you will use, start making possible playlists</h3>
+<p>Pick the best videos in your database. Sort them into possible playlists, with each playlist corresponding to a theme you have identified in step #2. It may not be the case that your channel benefits from being too closely associated with your subject matter. During the pilot we deliberately built a channel that appeared to be a generic content aggregation channel.</p>
+</li>
+<li>
+<h3><a id="Arrange_your_videos_within_each_playlist_to_tell_a_story_23"></a>Arrange your videos within each playlist to tell a story</h3>
+<p>For each playlist, attempt to develop a narrative arc, bringing together the content so that each video flows naturally from one to the other. Each playlist should now have roughly ten videos within it. If possible, ensure that the first video is striking and draws the user in. When creating a playlist around the 'Victimhood of the Ummah&quot; for example, we told a story which began by showing the reality of daily life for Muslims living in the west and slowly moved the viewer towards the negative reality of life under ISIS. This took the user on a narrative journey even though the content was uploaded by different creators.</p>
+</li>
+<li>
+<h3><a id="Develop_trailers_for_your_playlists_26"></a>Develop trailers for your playlists</h3>
+<p>Each playlist should have an engaging trailer created to draw users in. These should be of high quality and, where creative capacity does not exist in house, should be developed by trusted professional film makers. The trailers should draw on the content for the playlist which they are promoting and broadly address the kay narrative of the playlist it is promoting. Trailers should be: Short, engaging and ambiguous enough so users committed to extremist beliefs will not immediately recognize that the content of the playlist conflicts with their worldview. See <a href="https://www.youtube.com/watch?v=VR_kLczq9zs&amp;list=PL0I4bTGBHIMeAgZoMlCEKD5TzKWOEYAdJ&amp;index=1">here</a>for example.</p>
+</li>
+<li>
+<h3><a id="Pick_an_identity_for_your_YouTube_channel_29"></a>Pick an identity for your YouTube channel</h3>
+<p>Decide on an overarching identity for your channel, and design appropriate logos and cover photos to match. It may not be the case that your channel benefits from being too closely associated with your subject matter. During the pilot we deliberately built a channel that appeared to be a generic content aggregation channel.</p>
+</li>
+<li>
+<h3><a id="Set_up_your_YouTube_channel_upload_your_designs_on_it_32"></a>Set up your YouTube channel, upload your designs on it</h3>
+<p>Create your channel and upload your channel logo, cover photo and description. For help see <a href="https://support.google.com/youtube/answer/1646861?hl=en-GB">here</a>.</p>
+</li>
+<li>
+<h3><a id="Upload_your_trailers_35"></a>Upload your trailers</h3>
+<p>Upload your trailers to your channel, for help see <a href="https://support.google.com/youtube/answer/57407?hl=en-GB">here</a>. For now, keep these trailers unlisted. This way you can add them to playlists and ads but they will be undiscoverable until you are ready for your campaign to go live.</p>
+</li>
+<li>
+<h3><a id="Create_your_playlists_38"></a>Create your playlists</h3>
+<p>Now it’s time to create your playlists! For help see <a href="https://support.google.com/youtube/answer/57792?hl=en-GB">here.</a>As with the trailers, it may be best to keep these playlists unlisted for now to ensure that YouTube users do not stumble across them until your campaign is fully ready.</p>
+</li>
+<li>
+<h3><a id="Decide_which_messages_youll_use_in_your_banner_ads_41"></a>Decide which messages you’ll use in your banner ads</h3>
+<p>Working with subject matter experts, decide on the type of messaging you wish to use in your banner ads. The message of your ads may directly refute the beliefs you are attempting to counter, or alternatively, they may more subtly speaking to the primary themes you are addressing in an attempt to draw your audience in.</p>
+</li>
+<li>
+<h3><a id="Source_graphic_design_support_44"></a>Source graphic design support</h3>
+<p>Banner ads, see <a href="https://support.google.com/adwords/answer/1722096?hl=en-GB">here</a>, will take longer to create than text ads and are harder to adjust later on, so they should be designed before text ads. In order to complete these to a high standard, high quality graphic designers should be sourced. If quality graphic design capability is not available in house, outside graphic designers should be engaged.</p>
+</li>
+<li>
+<h3><a id="Design_your_visual_banner_ads_47"></a>Design your visual banner ads.</h3>
+<p>Work with your designers to begin to design your visual <a href="https://www.youtube.com/watch?v=PGu9zfsWFOY">banner ads</a>. The text used in the banner ad should directly correspond with the name of the playlist you are directing people towards. For example, in the pilot, ““The Soldier’s Perspective”” was text used in the banner ad for a playlist countering the notion of ISIS’ military supremacy.</p>
+<ul>
+<li>Ads should attempt to draw on the visual style used by the groups you are countering.</li>
+<li>Constructive ambiguity: Ads should be descriptive of the content that users can expect to reach if they click, but not completely overt about their purpose. Including questions in the text of the ad, which leave the viewer curious, are particularly useful for this.</li>
+<li>Once unique images have been selected for the banner ads associated with each playlist, designers must now ensure that banners are created to match each possible size required in adwords.</li>
+</ul>
+</li>
+<li>
+<h3><a id="Draft_initial_text_ads_54"></a>Draft initial text ads</h3>
+<p>Now it’s time to start thinking about your text ads. Text ads can be changed and adjusted mid campaign with ease, so feel free to try out a number of options! To begin the process create text ads which match the banner ads you have already created. If you have an ad which asks a question, create a text ad to match - simple! Just make sure to bear<a href="https://support.google.com/adwordspolicy/answer/6021630?hl=en-GB">character restrictions</a> in mind while drafting. Draft at least one text ad per campaign, and don’t worry, we’ll be drafting more later!</p>
+</li>
+<li>
+<h3><a id="Create_keyword_longlist_57"></a>Create keyword longlist</h3>
+<p>For each narrative you are seeking to counter, brainstorm longlists of <a href="https://support.google.com/adwords/answer/1704371?hl=en-GB">keywords</a>your target audience might be searching for. These are the keywords you will be advertising against. Don’t just think about the exact narratives you are countering, think about particular phrases, in-group terms, and references which are unique to the group you are targeting.</p>
+</li>
+<li>
+<h3><a id="Eliminate_false_positives_60"></a>Eliminate false positives</h3>
+<p>Once you have captured your ideas for possible keywords to advertise against, review the list with someone that was not in the original brainstorming session and attempt to remove false positives. For example, if the group you are seeking to target is often in the news, simply advertising against the group name alone may reach many people simply looking for news items, rather than reaching those at risk of falling into the orbit of a violent group. In addition, beware of search terms that may be commonly searched for by history students, for example certain commonly used in-group terms (such as ‘crusader army’ in the case of Jihadists) or historical references (such as ‘Joseph Goebbels’ in the case of neo-Nazis) may also be searched for regularly by students.</p>
+</li>
+<li>
+<h3><a id="Prioritize_most_important_keywords_63"></a>Prioritize most important keywords</h3>
+<p>Within each list, chose certain keywords that you believe to be crucial to the success of your campaign, for example because they reach the highest risk individuals. In the pilot, we prioritised keywords that indicate violent intent, such as ‘how to join ISIS’.</p>
+
+</li>
+<li>
+<h3><a id="Set_up_your_adwords_account_66"></a>Set up your adwords account</h3>
+<p>Good news, you are now ready to <a href="https://www.google.com/adwords/get-started/">set up your AdWords account</a>! When setting up an account you will be asked for credit card details and the details of your first campaign, adverts and target group.</p>
+
+</li>
+<li>
+<h3><a id="Create_display_campaign_69"></a>Create display campaign</h3>
+<p>Now that you’ve setup your account, you should have one search campaign ready! It’s time to create your Display campaign. In the ad space window you will see the option to +Campaign. Once you click this you should select ‘Display’ as the campaign type. Proceed to select your target location and keywords as normal, then upload your banners. See <a href="https://www.google.com/ads/displaynetwork/build-your-ads/display-ad-builder.html">here</a>for instructions.</p>
+
+</li>
+<li>
+<h3><a id="Create_in_display_video_campaign_72"></a>Create in display video campaign</h3>
+<p>Next you must create a YouTube campaign, but don’t worry, this can also be done via Adwords! As above, click on +Campaign button, but this time select ‘Video’ as your campaign type. You will again need to input your keywords and your target location. Following this, you must select the link to the playlist which you are attempting to guide users towards and decide if you want to create <a href="https://www.youtube.com/watch?v=9hWmsKBl-EA">an ‘In Display’ or an ‘In Stream’ campaign</a>. You will then have the option to select an auto generated thumbnail or upload your own. Once you have followed these steps your ‘In display’ campaign will be ready to go.</p>
+
+</li>
+<li>
+<h3><a id="Create_in_stream_video_campaign_75"></a>Create in stream video campaign</h3>
+<p>In order to create an ‘In Stream’ campaign simply follow the same steps as above, but select ‘In Stream’ when given the option. This time you won’t even have to pick a thumbnail - couldn’t be easier!</p>
+
+</li>
+<li>
+<h3><a id="Complete_remaining_campaigns_78"></a>Complete remaining campaigns</h3>
+<p>Once the above steps have all been completed for one of your key themes, repeat as required until you have created Search, Display, and Video campaigns matching each theme and playlist.</p>
+
+</li>
+<li>
+<h3><a id="Add_additional_text_ads_81"></a>Add additional text ads</h3>
+<p>For each of your Search campaigns, consider adding more text ads in order to maximise the possibility of reaching your target audience. Ads which closely match the keywords of searches are more likely to have a higher impression share. So look to your keyword list for inspiration, remember those PRIORITY key words (see step #18), and see if you can work these into the text of your ads. Repeat the above process across all search campaigns until you have at least twenty ads per Search campaign. For example, if ‘Dabiq’ is a priority keyword, make sure that you have created multiple ads with that word in it. This makes it more likely that your ad will be shown, and makes it <a href="https://support.google.com/adwords/answer/2454010?co=ADWORDS.IsAWNCustomer%3Dfalse&amp;hl=en-GB">more likely that your target audience will click</a> on your ad once shown.</p>
+
+</li>
+<li>
+<h3><a id="Decide_on_your_key_campaign_metrics_84"></a>Decide on your key campaign metrics</h3>
+<p>Now that you have familiarized yourself with Adwords through the creation of the campaigns, it’s time to decide on your key campaign metrics! Ensure that you refer back to the aims of your campaign (step #2), and identify metrics that can help you assess your Key Performance Indicators (KPIs). Perhaps measuring the <a href="https://support.google.com/adwords/answer/2615875?hl=en-GB">click through rate</a> on your ads, the overall viewing figures within your playlist, the Impression Share across the campaign, or a mix of all of the above. Whatever you decide your KPIs are, it’s crucial that you agree on and track these and they are linked to the overall outcomes you are attempting to achieve. For tips on how to evaluate ad performance see <a href="https://support.google.com/adwords/answer/2404037?hl=en-GB">here</a>.</p>
+
+</li>
+<li>
+<h3><a id="Create_a_metrics_tracker_87"></a>Create a metrics tracker</h3>
+<p>Create a tracker to capture your metrics. This should be easy to fill in and capture the key <a href="https://youtube.com/creatoracademy/page/course/analytics-series?hl=en-GB">metrics</a>you can gather from AdWords and your YouTube analytics.</p>
+
+</li>
+<li>
+<h3><a id="Publish_the_playlists_90"></a>Publish the playlists</h3>
+<p><a href="https://support.google.com/youtube/answer/3127309?hl=en">Publish</a>your playlists.</p>
+</li>
+
+<h2><a id="Campaign_management_95"></a>Campaign management</h2>
+
+<li>
+<h3><a id="Hit_go_97"></a>Hit go!</h3>
+<p>To start your campaigns, <a href="https://support.google.com/adwords/answer/2404259?hl=en-GB">unpause</a>them. Congratulations, you’re now live!</p>
+</li>
+<li>
+<h3><a id="Check_approval_status_100"></a>Check approval status.</h3>
+<p>Ensure none of your ads have been disapproved, and adjust where necessary. This task needs to be carried out daily. Ads can be disapproved even after they have initially been approved, especially ones related to sensitive content.</p>
+</li>
+<li>
+<h3><a id="Maintain_search_term_hygiene_103"></a>Maintain search term hygiene</h3>
+<p>Maintain <a href="https://support.google.com/adwords/answer/2472708?hl=en-GB">search term hygiene</a> by checking your search term report and adding negative keywords where necessary.This task needs to be carried out daily.</p>
+</li>
+<li>
+<h3><a id="Ensure_that_payment_systems_are_live_106"></a>Ensure that payment systems are live</h3>
+<p>Ensure that your method of payment is approved and able to cope with your advertising budget. If possible, it may be a good idea to register a backup payment method on Adwords to ensure that your bases are covered. Checking the ‘Billing’ section of Adwords should be carried out daily.</p>
+</li>
+<li>
+<h3><a id="Monitor_videos_comments_109"></a>Monitor videos comments</h3>
+<p>Monitor any videos you have uploaded (trailer for example) for negative or hateful comments. Depending on your campaign aims you may wish to remove these comments or respond to them. One of your KPIs may include reaction of your target audience, so it may be essential to capture this data before removing it. This task needs to be carried out daily.</p>
+</li>
+<li>
+<h3><a id="Capture_Adwords_data_112"></a>Capture Adwords data</h3>
+<p>Download data on key metrics (identified during step #27) from AdWords and input into tracker created during step #28. This task must be carried out on a weekly basis.</p>
+</li>
+<li>
+<h3><a id="Capture_YouTube_data_115"></a>Capture YouTube data</h3>
+<p>Download data on key metrics from YouTube and input into tracker. This task must be carried out on a weekly basis.</p>
+</li>
+<li>
+<h3><a id="Update_key_stakeholders_118"></a>Update key stakeholders</h3>
+<p>Share metrics tracker with any key stakeholders on a regular basis. KPIs must be monitored closely and adjustments made where the campaign is failing to meet one of its objectives. This task must be carried out on a weekly basis.</p>
+</li>
+<li>
+<h3><a id="Adjust_budgets_121"></a>Adjust budgets</h3>
+<p>Adjust budgets across campaigns and maximum Cost Per Click (CPC) for priority keywords depending on the relative success, as measured against key indicators. This task must be carried out on a weekly basis.</p>
+</li>
+<li>
+<h3><a id="Create_new_ads_based_on_trends_124"></a>Create new ads based on trends</h3>
+<p>Check the CTR on each of your text ads to assess any patterns, and learn from ads that are outperforming others. For example, within one of your campaigns you may find that your audience is responding better to ads which pose a question. Draft new text ads that match the style and tone that seems to be resonating with your audience.</p>
+
+</li>
+<li>
+<h3><a id="Adjust_playlist_order_127"></a>Adjust playlist order</h3>
+<p>From time to time, you should asses the average time your audience is spending in each playlist and attempt to identify patterns. If one of your playlists is outperforming the others on a regular basis, consider re-ordering your videos in other playlists and measuring whether or not this increases average time in playlist.</p>
+
+</li>
+<h2><a id="PostCampaign_132"></a>Post-Campaign</h2>
+
+<li>
+<h3><a id="End_all_campaigns_134"></a>End all campaigns</h3>
+<p>Once your budget has run out, pause all campaigns to ensure they stop running. Important to remember this step, because otherwise your campaigns will continue charging you on your registered payment method!</p>
+</li>
+<li>
+<h3><a id="Share_findings_137"></a>Share findings</h3>
+<p>Share your findings and suggestions.</p>
+</li>
+<li>
+<h3><a id="Update_method_140"></a>Update method</h3>
+<p>Update the Redirect Method blueprint on Github.</p>
+</li>
 </ol>
