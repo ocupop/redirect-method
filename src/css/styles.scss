@@ -267,13 +267,13 @@ Utility Classes
 
 
 .left-column {
-  float: left;
-  background-color: $gray-dark;
+  position: absolute;
   height: 100%;
   padding: 50px 0;
+  background-color: $gray-dark;
 }
 .right-column {
-  float: left;
+  margin-left: 30%;
   background-image: url(../img/halftone_background_doublecolumn.png);
   background-size: contain;
   background-color: #fff;

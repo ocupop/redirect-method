@@ -6,7 +6,6 @@
   // Initialize Sticky side menu
   $('.sidenav').stickit({
     screenMinWidth: 992,
-    scope: StickScope.Document,
     top: 40
   });
 
