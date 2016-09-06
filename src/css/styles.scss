@@ -257,12 +257,20 @@ Utility Classes
 }
 
 
-.pilot-layout, .sidebar-layout {
-  @extend .row;
+.sidebar-layout {
   position: relative;
   background-color: $gray-dark;
   margin-left: 0;
   margin-right: 0;
+  &:before {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+    content: " ";
+    display: table;
+  }
   .left-column {
     position: absolute;
     height: 100%;
