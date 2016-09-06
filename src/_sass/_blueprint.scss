@@ -50,6 +50,7 @@
 
 
 #blueprint {
+  counter-reset: step-counter;
   h2 {
     color: $orange;
     margin-bottom: 10px;
