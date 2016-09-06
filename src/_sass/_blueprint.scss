@@ -53,31 +53,29 @@
   counter-reset: step-counter;
   h2 {
     color: $orange;
-    margin-bottom: 10px;
+    margin: 30px 0;
   }
-  ol {
-    padding-left: 80px;
-    list-style-type: none;
-    >li {
+  h3 {
+    position: relative;
+    font-style: italic;
+    font-size: 20px;
+    padding-top: 4px;
+    counter-increment: step-counter;
+    &:before {
+      content: 'STEP ' counter(step-counter);
       position: relative;
-      counter-increment: step-counter;
-      h2 {
-        margin: 30px 0 30px -80px;
-      }
-      h3 {
-        font-style: italic;
-        font-size: 20px;
-        padding-top: 4px;
-      }
-      &:before {
-        content: 'STEP ' counter(step-counter);
-        position: absolute;
-        left: -80px;
-        top: 0;
-        font-weight: bold;
-        font-size: 20px;
-      }
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      margin-right: 20px;
     }
+  }
+  p {
+    padding-left: 90px;
+  }
+  ul {
+    padding-left: 90px;
+    list-style: circle;
   }
 }
 
