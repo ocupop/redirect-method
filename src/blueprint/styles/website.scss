@@ -100,10 +100,16 @@ h6 { font-size: 13px;}
   }
   p {
     padding-left: 95px;
+    font-weight: 300;
   }
   ul {
     padding-left: 110px;
     list-style: circle;
+    font-weight: inherit;
+  }
+  a {
+    color: $orange;
+    text-decoration: underline;
   }
 }
 
@@ -114,6 +120,9 @@ h6 { font-size: 13px;}
     &.summary {
       li {
         position: relative;
+        &:first-child {
+          display: none;
+        }
         &.active {
           &:before {
             content: '';
@@ -136,8 +145,8 @@ h6 { font-size: 13px;}
           padding: 8px 0 8px 40px;
           color: #fff;
           font-size: 22px;
-          &.gitbook-link {
-            display: none;
+          &:hover, &:focus {
+            text-decoration: none;
           }
         }
       }

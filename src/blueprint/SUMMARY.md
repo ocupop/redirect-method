@@ -1,6 +1,4 @@
-# Summary
-
-* [Preparation](index.md#preparation)
-* [Management](index.md#management)
+* [Preparation](index.md#campaign-preparation)
+* [Management](index.md#campaign-management)
 * [Post-Campaign](index.md#post-campaign)
 
