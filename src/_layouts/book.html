@@ -26,15 +26,25 @@ layout: default
 </section>
 <div id="pilot-presentation" class="pilot-layout">
   <nav class="left-column">
-    {% include sidenav.html %}
+    
   </nav>
   <div class="right-column">
-    <div class="container">
-      <h1>The Redirect Method Blueprint</h1>
-      <h4>Our step-by-step set of instructions and tips for replicating the Redirect Method</h4>
-      <a href="#"><span class="arrow-down"></span>Download The Redirect Method Blueprint PDF</a>
-      <a href="#"><span class="arrow-right"></span>View on Gitbook</a>
+    <div class="gray-light">
+      <div class="content" style="padding-left:50px; padding-bottom:30px;">
+        <h1>The Redirect Method Blueprint</h1>
+        <h4>Our step-by-step set of instructions and tips for replicating the Redirect Method</h4>
+        <a href="#"><span class="arrow-down"></span>Download The Redirect Method Blueprint PDF</a>
+        <a href="#"><span class="arrow-right"></span>View on Gitbook</a>
+      </div>
     </div>
-    {{ content }}
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="content" markdown>
+            {{ content }}
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

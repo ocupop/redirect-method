@@ -4,6 +4,7 @@
 ---
 @import '_variables';
 @import '_mixins';
+
 @import '_animate';
 @import '_backgrounds';
 
@@ -12,7 +13,11 @@
 @import '_slider';
 @import '_mosaic-animation';
 
+@import '_blueprint';
+
 @import "bootstrap";
+
+
 
 /* -----------------------------------------
 Global
@@ -391,19 +396,19 @@ Utility Classes
   }
 }
 
-.arrow-down {
-  display:inline-block;
-  &:before {
-    content: '';
-    margin: 0 5px;
-    display: block;
-    width: 0; 
-    height: 0; 
-    border-left: 9px solid transparent;
-    border-right: 9px solid transparent;
-    border-top: 15px solid #fff;
-  }
-}
+// .arrow-down {
+//   display:inline-block;
+//   &:before {
+//     content: '';
+//     margin: 0 5px;
+//     display: block;
+//     width: 0; 
+//     height: 0; 
+//     border-left: 9px solid transparent;
+//     border-right: 9px solid transparent;
+//     border-top: 15px solid #fff;
+//   }
+// }
 
 /* -----------------------------------------
 Page specific
