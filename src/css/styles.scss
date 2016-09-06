@@ -132,6 +132,7 @@ DOM
   }
   &.intro-pilot {
     background-image: url(../img/backgrounds/bg-pilot.png);
+    background-position-y: -300px;
   }
   &.intro-qa {
     background-image: url(../img/backgrounds/bg-qa.png);
@@ -245,7 +246,7 @@ Utility Classes
     width: 50px;
     border-radius: 50%;
     background-color: $brand-primary;
-    background-image: url(../img/bg-number.png);
+    background-image: url(../img/backgrounds/bg-number.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -522,7 +523,7 @@ Page specific
 }
 
 #engage {
-  background-image: url(../img/bg-constellation.png);
+  background-image: url(../img/backgrounds/bg-constellation.png);
   background-position-y: -15px;
   background-repeat: no-repeat;
   background-size: contain;

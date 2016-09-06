@@ -5,6 +5,12 @@ $shrink: 1;
 $ratio: 1 / $shrink;
 $speed: 30s;
 
+@keyframes slide {
+  from { background-position-x: 0; }
+  to   { background-position-x: -$img-w * $ratio; }
+}
+
+
 .slider-wrapper {
   position: relative;
   height: 520px;
