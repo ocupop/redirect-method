@@ -1,52 +1,10 @@
 /* -----------------------------------------
 Media Queries
 ----------------------------------------- */
-@media(min-width: 992px) {
-  // .left-column {
-  //   width: 225px;
-  // }
-  // .right-column {
-  //   width: calc(100% - 225px);
-  //   .container {
-  //     width: 730px;
-  //   }
-  // }
-  #blueprint {
-    img {
-      float: right;
-    }
-  }
-}
-
-@media(min-width: 1200px) {
-  .left-column {
-    // width: 30%;
-    // float: left;
-    // background-color: $gray-dark;
-    // height: 100%;
-    // padding: 50px 0;
-  }
-  .right-column {
-    // width: 70%;
-    // float: left;
-    // background-color: #fff;
-    .container {
-      width:810px;
-      margin-right: auto;
-      margin-left: 20px;
-    }
-  }
-}
-
-
 @media(max-width: 992px) {
   .left-column {
     width: 225px;
-    // float: none;
-    // background-color: $gray-dark;
-    // height: 100%;
     padding: 50px 0;
-    // position: absolute;
     left: -225px;
     top: 158px;
     transition: all .5s ease;
@@ -57,9 +15,6 @@ Media Queries
   }
 
   .right-column {
-    // width: 100%;
-    // float: left;
-    // background-color: #fff;
     margin: 0;
     transition: all .5s ease;
   }

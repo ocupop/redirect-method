@@ -269,7 +269,7 @@ Utility Classes
 .left-column {
   position: absolute;
   height: 100%;
-  width: 30%;
+  // width: 30%;
   padding: 50px 0;
   background-color: $gray-dark;
 }
@@ -278,6 +278,11 @@ Utility Classes
   background-image: url(../img/halftone_background_doublecolumn.png);
   background-size: contain;
   background-color: #fff;
+  .container {
+    max-width: 900px;
+    width: auto;
+    margin: 0 auto 0 40px;
+  }
   header {
     background-color: rgba(238,238,238,.65);
   }
