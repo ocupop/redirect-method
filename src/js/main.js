@@ -116,6 +116,9 @@ function activatePlayers() {
 
 
 $(document).on('ready', function() {
+
+  $('body').scrollspy({ target: '#sidebar' })
+
   // Activate tab with hash
   if(window.location.hash) {
     activateTab(window.location.hash);

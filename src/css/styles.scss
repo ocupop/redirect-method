@@ -23,6 +23,7 @@
 Global
 ----------------------------------------- */
 body {
+  position: relative;
   font-weight: 300;
 }
 
@@ -306,8 +307,10 @@ Utility Classes
           color: #fff;
           font-size: 23px;
           text-decoration: none;
+          padding: 0;
           &:focus, &:active, &:hover {
             text-decoration: none;
+            background-color: transparent;
           }
         }
       }
