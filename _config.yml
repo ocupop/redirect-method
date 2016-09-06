@@ -6,7 +6,7 @@ baseurl: "" # the subpath of your site, e.g. /clientname
 url: "http://lemon-stork1.cloudvent.net" # the base hostname & protocol for your site
 permalink: pretty
 
-gitbook_url: https://tbeck.gitbooks.io/the-redirect-method/content/
+gitbook_url: https://tbeck.gitbooks.io/the-redirect-method
 
 # Build settings
 port: 4001

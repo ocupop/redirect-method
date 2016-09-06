@@ -1,0 +1,31 @@
+.gray-light {
+  background-color: $gray-light;
+}
+
+.gray {
+  background-color: $gray;
+}
+
+.gray-lighter {
+  background-color: $gray-lighter;
+}
+
+.gray-dark {
+  background-color: $gray-dark;
+  color: #fff;
+  h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+  }
+}
+
+.bg-noise {
+  background-image: url(../img/backgrounds/bg-noise.png);
+  background-size: contain;
+}
+
+.bg-constellation {
+  background-image: url(../img/backgrounds/bg-constellation.png);
+  background-position-y: -15px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
