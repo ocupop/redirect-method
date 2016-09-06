@@ -1,4 +1,4 @@
-/* Website Styles */
+  /* Website Styles */
 @import '_variables';
 
 body {
@@ -17,144 +17,7 @@ h5 { font-size: $font-size-base;}
 h6 { font-size: 13px;}
 
 #book-search-input {display:none;}
-#page-header {
-  background-color: $gray-dark;
-  background-image: url(img/header-noise.png);
-  background-position-y: -50px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  box-shadow: 1px 3px 15px rgba(0,0,0,.5); 
-}
 
-#mainnav {
-  padding-top: 70px;
-  max-width: 1170px;
-  margin: 0 auto;
-  text-align: center;
-  ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    li {
-      height: 60px;
-      line-height: 60px;
-      margin: auto;
-      &.active {
-        &:after {
-          content: '';
-          display: block;
-          position: relative;
-          width: 100px;
-          height: 8px;
-          top: -8px;
-          background-color: #f37046;
-        }
-        a {
-          color: $brand-primary;
-        }
-      }
-      a {
-        font-size: 16px;
-        color: #fff;
-        text-transform: uppercase;
-        font-weight: 500;
-        text-decoration: none;
-        &:hover {
-          color: $brand-primary;
-        }
-        &:hover, &:active, &:visited, &:focus {
-          background: transparent;
-          text-decoration: none;
-        }
-      }
-    }
-  }
-  .icon-bar {
-    background-color: #fff;
-  }
-}
-
-#banner {
-  background-image: url(img/mideast_mountains_blueprintpage.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  min-height: 450px;
-  padding: 50px 0;
-  clear: both;
-  .container {
-    max-width: 1170px;
-  }
-  .banner-col {
-    width: 50%;
-    float: left;
-    padding: 20px;
-  }
-  .brand {
-    max-width: 275px;
-    display: block;
-    margin: 20px auto 0 auto;
-  }
-  h1 {
-    color: $gray;
-  }
-}
-
-// general classes
-
-
-
-
-.arrow-down {
-  display:inline-block;
-  background: $brand-primary;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  margin-right: 10px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  &:before {
-    content: '';
-    display: block;
-    width: 0;
-    height: 0;
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent;
-    border-top: 7px solid #fff;
-    position: absolute;
-    top: 5px;
-    left: 4px;
-  }
-}
-
-.arrow-right {
-  display:inline-block;
-  background: $brand-primary;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  margin-right: 10px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  &:before {
-    content: '';
-    display: block;
-    width: 0;
-    height: 0;
-    border-top: 4px solid transparent;
-    border-bottom: 4px solid transparent;
-    border-left: 7px solid #fff;
-    position: absolute;
-    top: 4px;
-    left: 6px;
-  }
-}
-
-//gitbook style overwrites
 .navigation {
   display: none;
 }
@@ -203,6 +66,7 @@ h6 { font-size: 13px;}
   }
 }
 .markdown-section {
+  counter-reset: step-counter;
   h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
   }
@@ -213,45 +77,36 @@ h6 { font-size: 13px;}
   h5 { font-size: $font-size-base;}
   h6 { font-size: 13px;}
 
-  ol {
-    padding-left: 80px;
-    list-style-type: none;
-    >li {
+  h2 {
+    color: $orange;
+    margin: 30px 0;
+  }
+  h3 {
+    position: relative;
+    font-style: italic;
+    font-size: 20px;
+    padding-top: 4px;
+    counter-increment: step-counter;
+    &:before {
+      content: 'STEP ' counter(step-counter);
+      display: inline-block;
       position: relative;
-      counter-increment: step-counter;
-      h2 {
-        margin: 30px 0 30px -80px;
-      }
-      h3 {
-        font-style: italic;
-        font-size: 20px;
-        margin-bottom: 0;
-      }
-      &:before {
-        content: 'STEP ' counter(step-counter);
-        position: absolute;
-        left: -80px;
-        top: 0;
-        font-weight: bold;
-        font-size: 20px;
-      }
+      width: 78px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      margin-right: 20px;
     }
   }
-}
-
-.page-wrapper {
-  h2 {
-    color: $brand-primary;
+  p {
+    padding-left: 95px;
   }
-  em {
-    font-size: 19px
+  ul {
+    padding-left: 110px;
+    list-style: circle;
   }
 }
 
-#book-search-input {
-  background: $gray-dark;
-  color: #fff;
-}
 .book-summary {
   background: $gray-dark;
   font-family: $font-family-sans-serif;
@@ -286,16 +141,6 @@ h6 { font-size: 13px;}
           }
         }
       }
-    }
-  }
-}
-
-// Media Queries
-@media(max-width: 768px) {
-  #banner {
-    .banner-col {
-      width: 100%;
-      float: none;
     }
   }
 }
