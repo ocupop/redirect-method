@@ -259,7 +259,7 @@ Utility Classes
 }
 
 
-.pilot-layout {
+.pilot-layout, .sidebar-layout {
   @extend .row;
   position: relative;
   background-color: $gray-dark;
@@ -398,46 +398,11 @@ Utility Classes
   }
 }
 
-// .arrow-down {
-//   display:inline-block;
-//   &:before {
-//     content: '';
-//     margin: 0 5px;
-//     display: block;
-//     width: 0; 
-//     height: 0; 
-//     border-left: 9px solid transparent;
-//     border-right: 9px solid transparent;
-//     border-top: 15px solid #fff;
-//   }
-// }
 
 /* -----------------------------------------
 Page specific
 ----------------------------------------- */
 
-//Index (context page)
-
-// #rami-description {
-//   img {
-//     max-width: 160px;
-//   }
-// }
-// #experiment-naming {
-//   z-index: 5;
-//   img {
-//     max-width: 275px;
-//   }
-// }
-// #what-is-rami {
-//   img {
-//     max-width: 300px;
-//     margin: 20px auto;
-//   }
-//   h2 {
-//     font-weight: 600;
-//   }
-// }
 
 //Pilot page
 // - research section
@@ -487,41 +452,6 @@ Page specific
   padding-top: 30px;
 }
 
-#blueprint-cta {
-  img {
-    box-shadow: 1px 3px 15px rgba(0,0,0,.5);
-    padding-bottom: 0;
-    max-width:225px;
-  }
-  p {
-    font-size: 28px;
-    margin-top:20px;
-    margin-bottom: 20px;
-    color: #fff;
-  }
-  .btn {
-    @extend .next;
-    font-size: 27px;
-    padding-top: 20px;
-    padding-bottom: 20px; 
-    &:after {
-      top: 15px;
-      right: 25px;
-    }
-  }
-}
-
-//Blueprint page
-
-#blueprint {
-  .btn {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 20px;
-    text-transform: uppercase;
-    margin-bottom:20px;
-  }
-}
 
 #engage {
   background-image: url(../img/backgrounds/bg-constellation.png);

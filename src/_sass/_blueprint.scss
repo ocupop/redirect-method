@@ -48,148 +48,34 @@
   }
 }
 
-// //gitbook style overwrites
-// .navigation {
-//   display: none;
-// }
 
-// .body-inner {
-//   .container {
-//     max-width: 800px;
-//     margin: 0 auto;
-//     padding: 20px 15px 40px 15px;
-//   }
-// }
-
-// .book-header-intro {
-//   background: $gray-light;
-//   h1 {
-//     font-weight: 400;
-//     color: $gray;
-//     font-size: 40px;
-//     margin: 0;
-//   }
-//   h4 {
-//     font-size: 16px;
-//     font-weight: 400;
-//     color: $black;
-//     margin: 5px 0 10px 0;
-//   }
-//   a {
-//     color:$gray-mid;
-//     position: relative;
-//     display: inline-block;
-//     padding-left: 20px;
-//     &:nth-of-type(2) {
-//       margin-left: 20px;
-//     }
-//   }
-// }
-
-// .book-header {
-//   position: relative;
-//   z-index: 20;
-// }
-
-// .book {
-//   &.font-family-1 {
-//     font-family: $font-family-sans-serif;
-//   }
-// }
-// .markdown-section {
-//   h1, h2, h3, h4, h5, h6 {
-//     font-weight: 400;
-//   }
-//   h1 { font-size: 35px;}
-//   h2 { font-size: 21px;}
-//   h3 { font-size: 18px;}
-//   h4 { font-size: 16px;}
-//   h5 { font-size: $font-size-base;}
-//   h6 { font-size: 13px;}
-
-//   ol {
-//     padding-left: 80px;
-//     list-style-type: none;
-//     >li {
-//       position: relative;
-//       counter-increment: step-counter;
-//       h2 {
-//         margin: 30px 0 30px -80px;
-//       }
-//       h3 {
-//         font-style: italic;
-//         font-size: 20px;
-//         margin-bottom: 0;
-//       }
-//       &:before {
-//         content: 'STEP ' counter(step-counter);
-//         position: absolute;
-//         left: -80px;
-//         top: 0;
-//         font-weight: bold;
-//         font-size: 20px;
-//       }
-//     }
-//   }
-// }
-
-// .page-wrapper {
-//   h2 {
-//     color: $brand-primary;
-//   }
-//   em {
-//     font-size: 19px
-//   }
-// }
-
-// #book-search-input {
-//   background: $gray-dark;
-//   color: #fff;
-// }
-// .book-summary {
-//   background: $gray-dark;
-//   font-family: $font-family-sans-serif;
-//   ul {
-//     &.summary {
-//       li {
-//         position: relative;
-//         &.active {
-//           &:before {
-//             content: '';
-//             display: block;
-//             height: 100%;
-//             width: 10px;
-//             background-color: $brand-primary;
-//             position: absolute;
-//             top: 0;
-//             left: 0;
-//           }
-//           a {
-//             color: $brand-primary;
-//           }
-//         }
-//         &.divider {
-//           display: none;
-//         }
-//         a, span {
-//           padding: 8px 0 8px 40px;
-//           color: #fff;
-//           font-size: 22px;
-//           &.gitbook-link {
-//             display: none;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
-
-// // Media Queries
-// @media(max-width: 768px) {
-//   #banner {
-//     .banner-col {
-//       width: 100%;
-//       float: none;
-//     }
-//   }
-// }
+#blueprint {
+  h2 {
+    color: $orange;
+    margin-bottom: 10px;
+  }
+  ol {
+    padding-left: 80px;
+    list-style-type: none;
+    >li {
+      position: relative;
+      counter-increment: step-counter;
+      h2 {
+        margin: 30px 0 30px -80px;
+      }
+      h3 {
+        font-style: italic;
+        font-size: 20px;
+        margin-bottom: 0;
+      }
+      &:before {
+        content: 'STEP ' counter(step-counter);
+        position: absolute;
+        left: -80px;
+        top: 0;
+        font-weight: bold;
+        font-size: 20px;
+      }
+    }
+  }
+}
