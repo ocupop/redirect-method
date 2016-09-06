@@ -13,23 +13,11 @@
       border-bottom: 8px solid transparent;
       &.active {
         border-bottom: 8px solid $orange;
-        // &:after {
-        //   content: '';
-        //   display: block;
-        //   position: absolute;
-        //   width: 100px;
-        //   height: 8px;
-        //   background-color: #f37046;
-        //   bottom: -11px;
-        //   left: 50%;
-        //   margin-left: -50px;
-        // }
         a {
           color: #fff;
         }
       }
       a {
-        // font-size: 17px;
         color: #fff;
         text-transform: uppercase;
         font-weight: 500;

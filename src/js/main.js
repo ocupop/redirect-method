@@ -38,7 +38,7 @@ function scrollTo(value) {
 function activateTab(hash) {
   var target = $(hash).offset().top;
 
-  $('.sidenav a').each(function(){
+  $('#pilot-presentation .sidenav a').each(function(){
     var href = $(this).attr('href');
     if(href == hash){
       target = $('#pilot-presentation').offset().top;
@@ -138,7 +138,7 @@ $(document).on('ready', function() {
     $('.left-column').toggleClass('open');
   });
 
-  $('.sidenav a, .next').on('click', function (e) {
+  $('#pilot-presentation .sidenav a, .next').on('click', function (e) {
     activateTab($(this).attr('href'));
     $('.left-column').removeClass('open');
   });
