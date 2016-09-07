@@ -29,6 +29,23 @@
     }
   });
 
+var inview = new Waypoint.Inview({
+  element: $('#adimation')[0],
+  enter: function(direction) {
+    window.console.log('Enter triggered with direction ' + direction);
+    $(this.element).find('img').addClass('animate');
+  },
+  entered: function(direction) {
+    // window.console.log('Entered triggered with direction ' + direction);
+  },
+  exit: function(direction) {
+    // window.console.log('Exit triggered with direction ' + direction);
+  },
+  exited: function(direction) {
+    window.console.log('Exited triggered with direction ' + direction);
+    $(this.element).find('img').removeClass('animate');
+  }
+})
 
 function scrollTo(value) {
   $('html, body').animate({scrollTop: value}, "slow");
@@ -39,6 +56,12 @@ function activateTab(hash) {
   var $players = $(hash).find('.player');
 
   activatePlayers($players);
+
+  if(hash == "#targeting") {
+    inview.enable();
+  } else {
+    inview.disable();
+  }
 
   $('#pilot-presentation .sidenav a').each(function(){
     var href = $(this).attr('href');
@@ -122,6 +145,10 @@ $(document).on('ready', function() {
 
   $('body').scrollspy({ target: '#sidebar' })
 
+  $('.scroll-animate').each(function() {
+    $(this).find('img').css({opacity: 0});
+  });
+
   // work around for pilot page load
   if(window.location.pathname == "/pilot/" && window.location.hash == "") {
     var $players = $("#research").find('.player');
@@ -151,27 +178,6 @@ $(document).on('ready', function() {
     $('.left-column').removeClass('open');
   });
 
-
-  $('.scroll-animate').each(function() {
-    $(this).find('img').css({opacity: 0});
-    new Waypoint.Inview({
-      element: $(this)[0],
-      enter: function(direction) {
-        // window.console.log('Enter triggered with direction ' + direction);
-        $(this.element).find('img').addClass('animate');
-      },
-      entered: function(direction) {
-        // window.console.log('Entered triggered with direction ' + direction);
-      },
-      exit: function(direction) {
-        // window.console.log('Exit triggered with direction ' + direction);
-      },
-      exited: function(direction) {
-        // window.console.log('Exited triggered with direction ' + direction);
-        $(this.element).find('img').removeClass('animate');
-      }
-    })
-  });
 });
 
 
