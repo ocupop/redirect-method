@@ -36,6 +36,9 @@ function scrollTo(value) {
 
 function activateTab(hash) {
   var target = $(hash).offset().top;
+  var $players = $(hash).find('.player');
+
+  activatePlayers($players);
 
   $('#pilot-presentation .sidenav a').each(function(){
     var href = $(this).attr('href');
@@ -48,10 +51,12 @@ function activateTab(hash) {
   scrollTo(target);
 }
 
-function activatePlayers() {
-  $('.player').each(function() {
+function activatePlayers($players) {
+  $players.each(function() {
     var videos = $(this).attr('data-videos') ? $(this).attr('data-videos').split(',') : false,
         list = $(this).attr('data-list') ? $(this).attr('data-list') : false;
+
+    window.console.log($(this), videos);
     $(this).youtube_video({
       playlist: list,
       channel: false,
@@ -117,15 +122,15 @@ function activatePlayers() {
 
 $(document).on('ready', function() {
 
+  // work around for pilot page load
+  if(window.location.pathname == "/pilot/" && window.location.hash == "") { activateTab("#research"); };
+
   $('body').scrollspy({ target: '#sidebar' })
 
   // Activate tab with hash
   if(window.location.hash) {
     activateTab(window.location.hash);
   }
-
-  // Initialize custom youtube player
-  activatePlayers();
 
   // Position mosaic images
   $('.mosaic-wrapper img').each(function() {
