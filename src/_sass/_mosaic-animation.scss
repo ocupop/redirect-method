@@ -16,7 +16,7 @@
     &.video {
       position: absolute;
       top: auto;
-      bottom: 0;
+      bottom: -10px;
       width: 100%;
       max-width: 100%;
     }
@@ -27,9 +27,9 @@
   img {
     opacity: 0;
     &.animate {
-      @for $i from 1 through 20 {
+      @for $i from 1 through 10 {
         &:nth-child(#{$i}) { 
-          @include animation(fadeIn, 0.5s, 1s * $i);
+          @include animation(fadeIn, 1s, 1.5s * $i);
         }
       }
     }
