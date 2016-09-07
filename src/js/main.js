@@ -55,8 +55,6 @@ function activatePlayers($players) {
   $players.each(function() {
     var videos = $(this).attr('data-videos') ? $(this).attr('data-videos').split(',') : false,
         list = $(this).attr('data-list') ? $(this).attr('data-list') : false;
-
-    window.console.log($(this), videos);
     $(this).youtube_video({
       playlist: list,
       channel: false,
@@ -122,10 +120,13 @@ function activatePlayers($players) {
 
 $(document).on('ready', function() {
 
-  // work around for pilot page load
-  if(window.location.pathname == "/pilot/" && window.location.hash == "") { activateTab("#research"); };
-
   $('body').scrollspy({ target: '#sidebar' })
+
+  // work around for pilot page load
+  if(window.location.pathname == "/pilot/" && window.location.hash == "") {
+    var $players = $("#research").find('.player');
+    activatePlayers($players);
+  }
 
   // Activate tab with hash
   if(window.location.hash) {
