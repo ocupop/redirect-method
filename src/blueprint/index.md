@@ -3,6 +3,8 @@ layout: book
 title: The Blueprint
 permalink: /blueprint/
 ---
+
+
 ## Campaign preparation
 
 ### Identify the problem you are trying to address through a campaign
@@ -15,7 +17,7 @@ Identify what needs to change to address the problem, and ensure you have a clea
 
 ### Map the extremist content you’re trying to address
 
-Many campaigns fail as they are based on assumptions rather than evidence. As such it is essential to map out the online content you are seeking to counter or undermine. For example, recruitment narratives are likely to change with regions, languages, target audience, etc, so it is crucial in this step to engage experts on the type of extremism you are seeking to counter. It can be useful to begin the mapping process with pre-existing lists or databases of content online. In our case we found [Jihadology](http://jihadology.net)a useful starting point when mapping ISIS recruitment content. For far right extremism [resources](https://www.splcenter.org/hatewatch)maintained by the SPLC may prove helpful.
+Many campaigns fail as they are based on assumptions rather than evidence. As such it is essential to map out the online content you are seeking to counter or undermine. For example, recruitment narratives are likely to change with regions, languages, target audience, etc, so it is crucial in this step to engage experts on the type of extremism you are seeking to counter. It can be useful to begin the mapping process with pre-existing lists or databases of content online. In our case we found [Jihadology](http://jihadology.net)&nbsp;a useful starting point when mapping ISIS recruitment content. For far right extremism [resources](https://www.splcenter.org/hatewatch)&nbsp;maintained by the SPLC may prove helpful.
 
 ### Analyze this content to map the main recruitment narratives
 
@@ -31,15 +33,15 @@ Draw your counter-content into a database. Code this database by theme, content 
 
 ### Select the videos you will use, start making possible playlists
 
-Pick the best videos in your database and send a heads up email, or YouTube message to the content owners to notify them that you’ll use their videos. Sort them into possible playlists, with each playlist corresponding to a theme you have identified in step #2\. It may not be the case that your channel benefits from being too closely associated with your subject matter. During the pilot we deliberately built a channel that appeared to be a generic content aggregation channel.
+Pick the best videos in your database and send a heads up email, or YouTube message to the content owners to notify them that you’ll use their videos. Sort them into possible playlists, with each playlist corresponding to a theme you have identified in step #2. It may not be the case that your channel benefits from being too closely associated with your subject matter. During the pilot we deliberately built a channel that appeared to be a generic content aggregation channel.
 
 ### Arrange your videos within each playlist to tell a story
 
-For each playlist, attempt to develop a narrative arc, bringing together the content so that each video flows naturally from one to the other. Each playlist should now have roughly ten videos within it. If possible, ensure that the first video is striking and draws the user in. When creating a playlist around the 'Victimhood of the Ummah" for example, we told a story which began by showing the reality of daily life for Muslims living in the west and slowly moved the viewer towards the negative reality of life under ISIS. This took the user on a narrative journey even though the content was uploaded by different creators.
+For each playlist, attempt to develop a narrative arc, bringing together the content so that each video flows naturally from one to the other. Each playlist should now have roughly ten videos within it. If possible, ensure that the first video is striking and draws the user in. When creating a playlist around the ‘Victimhood of the Ummah” for example, we told a story which began by showing the reality of daily life for Muslims living in the west and slowly moved the viewer towards the negative reality of life under ISIS. This took the user on a narrative journey even though the content was uploaded by different creators.
 
 ### Develop trailers for your playlists
 
-If you’re planning to use video advertising in your campaign, then Eachyou could use your video ad as the playlist  to draw users in. These trailers should be of high quality and, where creative capacity does not exist in house, should be developed by trusted professional film makers. The trailers should draw on the content for the playlist which they are promoting and broadly address the kay narrative of the playlist it is promoting. Trailers should be: Short, engaging and ambiguous enough so users committed to extremist beliefs will not immediately recognize that the content of the playlist conflicts with their worldview. See <font color="#f37046"><u>here</u></font> for example.
+If you’re planning to use video advertising in your campaign, then Each you could use your video ad as the playlist &nbsp;to draw users in. These trailers should be of high quality and, where creative capacity does not exist in house, should be developed by trusted professional film makers. The trailers should draw on the content for the playlist which they are promoting and broadly address the kay narrative of the playlist it is promoting. Trailers should be: Short, engaging and ambiguous enough so users committed to extremist beliefs will not immediately recognize that the content of the playlist conflicts with their worldview. See&nbsp;[<font color="#f37046"><u>here</u></font>](https://www.youtube.com/watch?v=VR_kLczq9zs&amp;list=PL0I4bTGBHIMeAgZoMlCEKD5TzKWOEYAdJ&amp;index=1)&nbsp;for example.
 
 ### Pick an identity for your YouTube channel
 
@@ -55,11 +57,11 @@ Upload your trailers to your channel, for help see [here](https://support.google
 
 ### Create your playlists
 
-Now it’s time to create your playlists! For help see [here.](https://support.google.com/youtube/answer/57792?hl=en-GB)As with the trailers, it may be best to keep these playlists unlisted for now to ensure that YouTube users do not stumble across them until your campaign is fully ready.
+Now it’s time to create your playlists! For help see [here.](https://support.google.com/youtube/answer/57792?hl=en-GB)&nbsp;As with the trailers, it may be best to keep these playlists unlisted for now to ensure that YouTube users do not stumble across them until your campaign is fully ready.
 
 ### Set up your adwords account
 
-Good news, you are now ready to [set up your AdWords account](https://www.google.com/adwords/get-started/)!  When setting up an account you will be asked for credit card details and the details of your first campaign, adverts and target group.
+Good news, you are now ready to [set up your AdWords account](https://www.google.com/adwords/get-started/)! &nbsp;When setting up an account you will be asked for credit card details and the details of your first campaign, adverts and target group.
 
 ### Create a Media Plan
 
@@ -77,32 +79,33 @@ Banner ads, see [here](https://support.google.com/adwords/answer/1722096?hl=en-G
 
 Work with your designers to begin to design your visual [banner ads](https://www.youtube.com/watch?v=PGu9zfsWFOY). The text used in the banner ad should directly correspond with the name of the playlist you are directing people towards. For example, in the pilot, ““The Soldier’s Perspective”” was text used in the banner ad for a playlist countering the notion of ISIS’ military supremacy.
 
-*   Ads should attempt to draw on the visual style used by the groups you are countering.
-*   Constructive ambiguity: Ads should be descriptive of the content that users can expect to reach if they click, but not completely overt about their purpose. Including questions in the text of the ad, which leave the viewer curious, are particularly useful for this.
-*   Make sure all ads follow [AdWords Advertising Policies](https://support.google.com/adwordspolicy/answer/6008942?hl=en)
-*   Once unique images have been selected for the banner ads associated with each playlist, designers must now ensure that banners are created to match each possible size required in adwords.
+* Ads should attempt to draw on the visual style used by the groups you are countering.
+* Constructive ambiguity: Ads should be descriptive of the content that users can expect to reach if they click, but not completely overt about their purpose. Including questions in the text of the ad, which leave the viewer curious, are particularly useful for this.
+* Make sure all ads follow [AdWords Advertising Policies](https://support.google.com/adwordspolicy/answer/6008942?hl=en)
+* Once unique images have been selected for the banner ads associated with each playlist, designers must now ensure that banners are created to match each possible size required in adwords.
+
 
 ### Create keyword longlist
 
-For each narrative you are seeking to counter, brainstorm longlists of keywords your target audience might be searching for. These are the keywords you will be advertising against. Don't just think about the exact narratives you are countering, think about particular phrases, in-group terms, and references which are unique to the group you are targeting.
+For each narrative you are seeking to counter, brainstorm long lists of [keywords](https://support.google.com/adwords/answer/1704371?hl=en-GB) your target audience might be searching for. These are the keywords you will be advertising against. Don’t just think about the exact narratives you are countering, think about particular phrases, in-group terms, and references which are unique to the group you are targeting.
 
 ### Eliminate false positives
 
-Once you have captured your ideas for possible keywords to advertise against, review the list with someone that was not in the original brainstorming session and attempt to remove false positives. For example, if the group you are seeking to target is often in the news, simply advertising against the group name alone may reach many people simply looking for news items, rather than reaching those at risk of falling into the orbit of a violent group.  
+Once you have captured your ideas for possible keywords to advertise against, review the list with someone that was not in the original brainstorming session and attempt to remove false positives. For example, if the group you are seeking to target is often in the news, simply advertising against the group name alone may reach many people simply looking for news items, rather than reaching those at risk of falling into the orbit of a violent group.
 
-In addition, beware of search terms that may be commonly searched for by history students, for example certain commonly used in-group terms (such as 'crusader army' in the case of Jihadists) or historical references (such as 'Joseph Goebbels' in the case of neo-Nazis) may also be searched for regularly by students.
+In addition, beware of search terms that may be commonly searched for by history students, for example certain commonly used in-group terms (such as ‘crusader army’ in the case of Jihadists) or historical references (such as ‘Joseph Goebbels’ in the case of neo-Nazis) may also be searched for regularly by students.
 
 ### Prioritise most important keywords
 
-Within each list, chose certain keywords that you believe to be crucial to the success of your campaign, for example because they reach the highest risk individuals. In the pilot, we prioritised keywords that indicate violent intent, such as 'how to join ISIS'.
+Within each list, chose certain keywords that you believe to be crucial to the success of your campaign, for example because they reach the highest risk individuals. In the pilot, we prioritised keywords that indicate violent intent, such as ‘how to join ISIS’.
 
 ### Draft initial text ads
 
-Now it’s time to start thinking about your text ads. Text ads can be changed and adjusted mid campaign with ease, so feel free to try out a number of options! To begin think about which ad message best corresponds to the keyword lists you plan to use for targeting, additionally it’s preferable if create text ads which are relevant to the banner ads you have already created. If you have an ad which asks a question, create a text ad to match - simple! Just make sure to bear [character restrictions](https://support.google.com/adwordspolicy/answer/6021630?hl=en-GB) in mind while drafting. Draft at least one text ad per campaign, and don’t worry, we’ll be drafting more later. Similar to banner ads, make sure all ads follow AdWords Advertising Policies
+Now it’s time to start thinking about your text ads. Text ads can be changed and adjusted mid campaign with ease, so feel free to try out a number of options! To begin think about which ad message best corresponds to the keyword lists you plan to use for targeting, additionally it’s preferable if create text ads which are relevant to the banner ads you have already created. If you have an ad which asks a question, create a text ad to match - simple! Just make sure to bear&nbsp;[character restrictions](https://support.google.com/adwordspolicy/answer/6021630?hl=en-GB) in mind while drafting. Draft at least one text ad per campaign, and don’t worry, we’ll be drafting more later. Similar to banner ads, make sure all ads follow AdWords Advertising Policies
 
 ### Create display campaign
 
-Now that you have one search campaign ready! It's time to create your Display campaign. In the ad space window you will see the option to +Campaign. Once you click this you should select 'Display' as the campaign type. Proceed to select your target location and keywords as normal, then upload your banners. See [here](https://www.google.com/ads/displaynetwork/build-your-ads/display-ad-builder.html) for instructions.
+Now that you have one search campaign ready! It’s time to create your Display campaign. In the ad space window you will see the option to +Campaign. Once you click this you should select ‘Display’ as the campaign type. Proceed to select your target location and keywords as normal, then upload your banners. See [here](https://www.google.com/ads/displaynetwork/build-your-ads/display-ad-builder.html)&nbsp;for instructions.
 
 ### Create in display video campaign
 
@@ -118,7 +121,7 @@ Once the above steps have all been completed for one of your key themes, repeat 
 
 ### Add additional text ads
 
-For each of your Search campaigns, consider adding more text ads in order to maximise the possibility of reaching your target audience. Ads which closely match the keywords of searches are more likely to have a higher engagement rate (CTR). So look to your keyword list for inspiration, remember those PRIORITY key words (see step #20), and see if you can work these into the text of your ads. Repeat the above process across all search campaigns until you have between ten to twenty ads per Search campaign. For example, if ‘Dabiq’ is a priority keyword, make sure that you have created multiple ads with that word in it. This makes it more likely that your ad will be shown, and makes it [more likely that your target audience will click](https://support.google.com/adwords/answer/2454010?co=ADWORDS.IsAWNCustomer%3Dfalse&hl=en-GB) on your ad once shown. Again, it’s important to make sure all ads follow [AdWords Advertising Policies](https://support.google.com/adwordspolicy/answer/6008942?hl=en)
+For each of your Search campaigns, consider adding more text ads in order to maximise the possibility of reaching your target audience. Ads which closely match the keywords of searches are more likely to have a higher engagement rate (CTR). So look to your keyword list for inspiration, remember those PRIORITY key words (see step #20), and see if you can work these into the text of your ads. Repeat the above process across all search campaigns until you have between ten to twenty ads per Search campaign. For example, if ‘Dabiq’ is a priority keyword, make sure that you have created multiple ads with that word in it. This makes it more likely that your ad will be shown, and makes it [more likely that your target audience will click](https://support.google.com/adwords/answer/2454010?co=ADWORDS.IsAWNCustomer%3Dfalse&amp;hl=en-GB) on your ad once shown. Again, it’s important to make sure all ads follow [AdWords Advertising Policies](https://support.google.com/adwordspolicy/answer/6008942?hl=en)
 
 ### Decide on your key campaign metrics
 
@@ -126,21 +129,21 @@ Now that you have familiarized yourself with Adwords through the creation of the
 
 ### Create a metrics tracker
 
-Create a tracker to capture your metrics. This should be easy to fill in and capture the key [metrics](https://youtube.com/creatoracademy/page/course/analytics-series?hl=en-GB) you can gather from AdWords and your YouTube analytics.
+Create a tracker to capture your metrics. This should be easy to fill in and capture the key [metrics](https://youtube.com/creatoracademy/page/course/analytics-series?hl=en-GB)&nbsp;you can gather from AdWords and your YouTube analytics.
 
 ### Publish the playlists
 
-[Publish](https://support.google.com/youtube/answer/3127309?hl=en) your playlists.
+[Publish](https://support.google.com/youtube/answer/3127309?hl=en)&nbsp;your playlists.
 
 ## Campaign management
 
 ### Ensure that payment systems are live
 
-Ensure that your method of payment is approved and able to cope with your advertising budget. If possible, it may be a good idea to register a backup payment method on Adwords to ensure that your bases are covered. Checking the 'Billing' section of Adwords should be carried out daily.
+Ensure that your method of payment is approved and able to cope with your advertising budget. If possible, it may be a good idea to register a backup payment method on Adwords to ensure that your bases are covered. Checking the ‘Billing’ section of Adwords should be carried out daily.
 
 ### Hit go!
 
-To start your campaigns, [unpause](https://support.google.com/adwords/answer/2404259?hl=en-GB) them. Congratulations, you’re now live!
+To start your campaigns, [unpause](https://support.google.com/adwords/answer/2404259?hl=en-GB)&nbsp;them. Congratulations, you’re now live!
 
 ### Check approval status.
 
@@ -156,7 +159,7 @@ Monitor any videos you have uploaded (trailer for example) for negative or hatef
 
 ### Capture Adwords data
 
-Download data on key metrics (identified during step #27) from AdWords and input into tracker created during step #28\. This task must be carried out on a weekly basis.
+Download data on key metrics (identified during step #27) from AdWords and input into tracker created during step #28. This task must be carried out on a weekly basis.
 
 ### Capture YouTube data
 
@@ -191,4 +194,3 @@ Share your findings and suggestions.
 ### Update method
 
 Update the Redirect Method blueprint on Github.
-
