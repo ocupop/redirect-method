@@ -3,18 +3,26 @@
     placement: 'auto right'
   });
 
+  $('.sidenav a').on('shown.bs.tab', function (e) {
+    var target = $(e.target).attr('href'),
+        $players = $(target).find('.player'),
+        $animations = $(target).find('.scroll-animate');
+
+    activatePlayers($players);
+    activateAnimations($animations);
+
+    // window.console.log(e.target); // newly activated tab
+    // window.console.log(e.relatedTarget); // previous active tab
+
+  })
+
   // Initialize Sticky side menu
   $('.sidenav').stickit({
     screenMinWidth: 992,
     top: 40
   });
 
-  // Add listener for hash changes
-  window.addEventListener("hashchange", function(e) {
-    activateTab(window.location.hash);
-  });
-
-  // Add listner for click to go back top
+  // Add listener for click to go back top
   $('#top').on('click', function() {
     if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
 
@@ -29,23 +37,6 @@
     }
   });
 
-var inview = new Waypoint.Inview({
-  element: $('#adimation')[0],
-  enter: function(direction) {
-    window.console.log('Enter triggered with direction ' + direction);
-    $(this.element).find('img').addClass('animate');
-  },
-  entered: function(direction) {
-    // window.console.log('Entered triggered with direction ' + direction);
-  },
-  exit: function(direction) {
-    // window.console.log('Exit triggered with direction ' + direction);
-  },
-  exited: function(direction) {
-    window.console.log('Exited triggered with direction ' + direction);
-    $(this.element).find('img').removeClass('animate');
-  }
-})
 
 function scrollTo(value) {
   $('html, body').animate({scrollTop: value}, "slow");
@@ -53,15 +44,6 @@ function scrollTo(value) {
 
 function activateTab(hash) {
   var target = $(hash).offset().top;
-  var $players = $(hash).find('.player');
-
-  activatePlayers($players);
-
-  if(hash == "#targeting") {
-    inview.enable();
-  } else {
-    inview.disable();
-  }
 
   $('#pilot-presentation .sidenav a').each(function(){
     var href = $(this).attr('href');
@@ -74,10 +56,36 @@ function activateTab(hash) {
   scrollTo(target);
 }
 
+function activateAnimations($animations) {
+  window.console.log("Activate Animations: ", $animations.length);
+  $animations.each(function() {
+    $(this).find('img').css({opacity: 0});
+    var inview = new Waypoint.Inview({
+      element: $(this)[0],
+      enter: function(direction) {
+        window.console.log('Enter triggered with direction ' + direction);
+        $(this.element).find('img').addClass('animate');
+      },
+      entered: function(direction) {
+        // window.console.log('Entered triggered with direction ' + direction);
+      },
+      exit: function(direction) {
+        // window.console.log('Exit triggered with direction ' + direction);
+      },
+      exited: function(direction) {
+        window.console.log('Exited triggered with direction ' + direction);
+        $(this.element).find('img').removeClass('animate');
+      }
+    });
+  });
+}
+
 function activatePlayers($players) {
+  window.console.log("Activate Players: ", $players.length);
   $players.each(function() {
     var videos = $(this).attr('data-videos') ? $(this).attr('data-videos').split(',') : false,
         list = $(this).attr('data-list') ? $(this).attr('data-list') : false;
+    window.console.log("Active Player: ", videos, list);
     $(this).youtube_video({
       playlist: list,
       channel: false,
@@ -144,10 +152,6 @@ function activatePlayers($players) {
 $(document).on('ready', function() {
 
   $('body').scrollspy({ target: '#sidebar' })
-
-  $('.scroll-animate').each(function() {
-    $(this).find('img').css({opacity: 0});
-  });
 
   // work around for pilot page load
   if(window.location.pathname == "/pilot/" && window.location.hash == "") {
