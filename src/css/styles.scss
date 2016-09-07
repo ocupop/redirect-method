@@ -318,7 +318,7 @@ Utility Classes
   }
   .right-column {
     margin-left: 31%;
-    background-image: url(../img/halftone_background_doublecolumn.png);
+    background-image: url(../img/backgrounds/halftone_background_doublecolumn.png);
     background-size: contain;
     background-color: #fff;
     .container {
@@ -430,7 +430,7 @@ Page specific
 }
 // - curation section
 #channels {
-  background-image: url(../img/halftone_background_doublecolumn.png);
+  background-image: url(../img/backgrounds/halftone_background_doublecolumn.png);
   background-size: contain;
   background-color: $gray-lighter;
   box-shadow: none;
