@@ -33,7 +33,7 @@
 .yesp .yesp-container {
 	float: left;
 	width: 600px;
-	background: #333 url(../images/ajax.gif) no-repeat center center;
+	background: #333 url(../img/player/ajax.gif) no-repeat center center;
 	position: relative;
 	height: 300px;
 	overflow: hidden;
@@ -42,7 +42,7 @@
 .yesp .yesp-playlist {
 	float: left;
 	width: 200px;
-	background: #333 url(../images/ajax.gif) no-repeat center center;
+	background: #333 url(../img/player/ajax.gif) no-repeat center center;
 	height: 300px;
 	overflow: hidden;
 	position: relative;
@@ -70,13 +70,13 @@
 			position: relative;
 			left: -42px;
 			top: -30px;
-			background: url(../images/youtube-icon-dark.png) no-repeat top left;
+			background: url(../img/player/youtube-icon-dark.png) no-repeat top left;
 			width: 85px;
 			height: 60px;
 		}
 
 		.yesp .yesp-container .yesp-autoposter:hover .yesp-autoposter-icon div {
-			background-image: url(../images/youtube-icon-red.png);
+			background-image: url(../img/player/youtube-icon-red.png);
 
 		}
 
@@ -233,7 +233,7 @@
 		}
 
 		.yesp .yesp-social a.yesp-social-link {
-			background: transparent url(../images/share_link.png) no-repeat top left;
+			background: transparent url(../img/player/share_link.png) no-repeat top left;
 		}
 
 .yesp a.yesp-youtube-logo {
@@ -248,7 +248,7 @@
 	z-index: 999;
 	bottom: 50px;
 	right: 0px;
-	background: transparent url(../images/youtube-logo-light.png) no-repeat top left;
+	background: transparent url(../img/player/youtube-logo-light.png) no-repeat top left;
 	background-size: 100%;
 	opacity: .25;
 	cursor: pointer;
@@ -358,7 +358,7 @@
 			float: left;
 			width: 16px;
 			height: 14px;
-			/*background: transparent url(../images/volume-on.png) center center no-repeat;*/
+			/*background: transparent url(../img/player/volume-on.png) center center no-repeat;*/
 			background: transparent;
 			opacity: 1;
 			text-decoration: none !important;
@@ -372,7 +372,7 @@
 		}
 
 		.yesp .yesp-volume a.yesp-volume-icon.yesp-volume-icon-off {
-			background: transparent url(../images/volume-off.png) center center no-repeat;
+			background: transparent url(../img/player/volume-off.png) center center no-repeat;
 		}
 
 		.yesp .yesp-volume .yesp-volume-bar {
@@ -580,7 +580,7 @@
 	.yesp .yesp-hp {
 		clear: both;
 		height: 98px;
-		background: #333 url(../images/ajax.gif) no-repeat center center;
+		background: #333 url(../img/player/ajax.gif) no-repeat center center;
 		overflow: hidden;
 		width: 100%;
 	}
