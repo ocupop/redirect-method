@@ -20,5 +20,5 @@ User-agent: *
   {% else %}
     Disallow:
   {% endif %}
-  Disallow:
+  Allow:
 {% endif %}
